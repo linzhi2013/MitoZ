@@ -5,10 +5,11 @@ MitoZ.py is a Python3-based toolkit which aims to automatically filter pair-end 
 
 
 ## System requirment
-###Platform
+
+### Platform
 MitoZ.py is developed and tested under `Linux version 2.6.32-696.el6.x86_64 (mockbuild@c1bm.rdu2.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) ) #1 SMP Tue Mar 21 19:29:05 UTC 2017`. 
 
-###Harddisk space
+### Harddisk space
 \>100G
 
 ###Memory

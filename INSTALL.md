@@ -15,6 +15,14 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
 # 2. Install dependency with `conda`
 
+## 2.1 Set up channels
+
+    conda config --add channels defaults
+    conda config --add channels bioconda
+    conda config --add channels conda-forge
+
+## 2.2 Set up an isolated enviroment for MitoZ
+
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.
 
     conda create  -n mitozEnv  -c conda-forge libgd=2.2.4 python=3.6.0 biopython==1.69 ete3==3.0.0b35
@@ -25,7 +33,7 @@ It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`
 
     source activate mitozEnv
 
-# 3. Install NCBI taxonomy database for ete3 package
+# 4. Install NCBI taxonomy database for ete3 package
 1. Network connection required.
 2. `HOME` directory must have more than 500M space available.
 

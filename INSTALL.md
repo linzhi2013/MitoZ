@@ -21,6 +21,23 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
     conda config --add channels bioconda
     conda config --add channels conda-forge
 
+### tips
+The download speeds from the above channels can be very slow, if this is the case to you,
+you can set other mirror channels, but make sure the `conda-forge` channel has the highest
+priority (the last one to be added), followed by `bioconda` channel.
+
+For example, in china, you can set:
+    
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+
+Or,
+
+    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
+    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+
+but I cannot ensure using mirror channels will always work. Good luck!
+
 ## 2.2 Set up an isolated enviroment for MitoZ
 
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.

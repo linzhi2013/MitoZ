@@ -154,7 +154,6 @@ Or,
     --fastq_read_length 150 \
     --fastafile totoal_assembly.fa
 
-If you want to see the abundance along the mitogenome sequences, you will also need to set `--fastq1` and `--fastq2`.
 
 ### 6 annotate
 
@@ -171,6 +170,8 @@ A fasta file containing the mitochondrial seqeunces.
     --outprefix test --thread_number 8 \
     --fastafile mitogenome.fa
 
+
+If you want to see the abundance along the mitogenome sequences, you will also need to set `--fastq1` and `--fastq2`.
 
 ### 7. visualize
 

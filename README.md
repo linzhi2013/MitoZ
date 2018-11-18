@@ -3,8 +3,6 @@
 ## About MitoZ.py
 MitoZ.py is a Python3-based toolkit which aims to automatically filter pair-end raw data (fastq files), assemble genome, search for mitogenome sequences from the genome assembly result, annotate mitogenome (genbank file as result), and mitogenome visualization.
 
-###Reference
-Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization.
 
 ## System requirment
 ###Platform
@@ -54,7 +52,15 @@ MitoZ.py use the `--clade` option to choose corresponding database (HMM modules,
 Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `1.adapter.list.gz` and `2.adapter.list.gz`.
 
 #### 1.2 Example
-`python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 12 --fastq1 raw.1.fq.gz --fastq2 raw.2.fq.gz --fastq_read_length 150 --insert_size 250  --run_mode 2 --filter_taxa_method 1 --requiring_taxa 'Arthropoda'`
+`python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test \
+--thread_number 12 \
+--fastq1 raw.1.fq.gz \
+--fastq2 raw.2.fq.gz \
+--fastq_read_length 150 \
+--insert_size 250  \
+--run_mode 2 \
+--filter_taxa_method 1 \
+--requiring_taxa 'Arthropoda'`
 
 For more details, please refer to `python3 MitoZ.py all -h`
 
@@ -67,7 +73,15 @@ For more details, please refer to `python3 MitoZ.py all -h`
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
 #### 2.2 Example
-`python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz --fastq_read_length 150 --insert_size 250 --run_mode 2 --filter_taxa_method 1 --requiring_taxa 'Arthropoda'`
+`python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test \
+--thread_number 8 \
+--fastq1 clean.1.fq.gz \
+--fastq2 clean.2.fq.gz \
+--fastq_read_length 150 \
+--insert_size 250 \
+--run_mode 2 \
+--filter_taxa_method 1 \
+--requiring_taxa 'Arthropoda'`
 
 
 ### 3 filter
@@ -89,7 +103,15 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
 #### 4.2 Example
-`python3 MitoZ.py assemble --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz --fastq_read_length 150 --insert_size 250 --run_mode 2 --filter_taxa_method 1 --requiring_taxa 'Arthropoda'`
+`python3 MitoZ.py assemble --genetic_code 5 --clade Arthropoda --outprefix test \
+--thread_number 8 \
+--fastq1 clean.1.fq.gz \
+--fastq2 clean.2.fq.gz \
+--fastq_read_length 150 \
+--insert_size 250 \
+--run_mode 2 \
+--filter_taxa_method 1 \
+--requiring_taxa 'Arthropoda'`
 
 
 ### 5 findmitoscaf
@@ -108,9 +130,18 @@ Otherwise, you still need following two files as input,
 
 
 #### 5.2 Example
-`python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --from_soaptrans --fastafile totoal_assembly.fa`
+`python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test \
+--thread_number 8 \
+--from_soaptrans \
+--fastafile totoal_assembly.fa`
+
 Or,
-`python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz --fastq_read_length 150 --fastafile totoal_assembly.fa`
+`python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda \
+--outprefix test --thread_number 8 \
+--fastq1 clean.1.fq.gz \
+--fastq2 clean.2.fq.gz \
+--fastq_read_length 150 \
+--fastafile totoal_assembly.fa`
 
 If you want to see the abundance along the mitogenome sequences, you will also need to set `--fastq1` and `--fastq2`.
 
@@ -178,13 +209,22 @@ in the directory of `outprefix.assembly`.
 
 
 #### 2.2 Example
-`python3 MitoZ.py all2 --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 12 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz --fastq_read_length 150 --insert_size 250 --run_mode 3 --filter_taxa_method 1 --requiring_taxa 'Arthropoda' --quick_mode_seq_file quickMode.fa --quick_mode_fa_genes_file quick_mode_fa_genes.txt  --missing_PCGs ND4L ND6 ND2 --quick_mode_score_file work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted  --quick_mode_prior_seq_file work71.hmmtblout.besthit.sim.filtered.fa`
+`python3 MitoZ.py all2 --genetic_code 5 --clade Arthropoda --outprefix test \
+--thread_number 12 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz \
+--fastq_read_length 150 --insert_size 250 \
+--run_mode 3 \
+--filter_taxa_method 1 \
+--requiring_taxa 'Arthropoda' \
+--quick_mode_seq_file quickMode.fa \
+--quick_mode_fa_genes_file quick_mode_fa_genes.txt  \
+--missing_PCGs ND4L ND6 ND2 \
+--quick_mode_score_file work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted  \
+--quick_mode_prior_seq_file work71.hmmtblout.besthit.sim.filtered.fa`
 
 The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `outprefix.assembly2`.
 
 
 ## Citation
 
-    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for
-    mitochondrial genome assembly, annotation and visualization
+    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization
 

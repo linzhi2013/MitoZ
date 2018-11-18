@@ -167,7 +167,9 @@ A fasta file containing the mitochondrial seqeunces.
 
 #### 6.2 Example
 
-    python3 MitoZ.py annotate --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastafile mitogenome.fa
+    python3 MitoZ.py annotate --genetic_code 5 --clade Arthropoda \
+    --outprefix test --thread_number 8 \
+    --fastafile mitogenome.fa
 
 
 ### 7. visualize
@@ -205,14 +207,14 @@ The result files should be in `outprefix.result` directory.
 
 
 ## Multi-Kmer mode
-when there missing PCGs after you run MitoZ in quick mode (`--run_mode 2`), you can try with the multi-Kmer mode (`--run_mode 3`).
+when there are missing PCGs after you run MitoZ in quick mode (`--run_mode 2`), you can try with the multi-Kmer mode (`--run_mode 3`).
 
 You should provide the quick mode assembly as input, including files:
 
-1. `work71.hmmout.fa`, or a file (e.g. `quickMode.fa`) which you convince containing the correct mitogenome sequences for you sample. And manually create a file (e.g. `quick_mode_fa_genes.txt`) describing what PCG genes on each sequence, format:
+1. `work71.hmmout.fa`, or a file (e.g. `quickMode.fa`) which you convince containing the correct mitogenome sequences for your sample. And manually create a file (e.g. `quick_mode_fa_genes.txt`) describing what PCG genes on each sequence, format:
 
-    seqid1 PCG1 PCG2
-    seqid2 PCG3
+        seqid1 PCG1 PCG2
+        seqid2 PCG3
 
 2. `work71.hmmtblout.besthit.sim.filtered.fa`
 

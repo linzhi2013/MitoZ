@@ -1,7 +1,7 @@
 # Manual of MitoZ
 
 ## About MitoZ
-MitoZ is a Python3-based toolkit which aims to automatically filter pair-end raw data (fastq files), assemble genome, search for mitogenome sequences from the genome assembly result, annotate mitogenome (genbank file as result), and mitogenome visualization.
+MitoZ is a Python3-based toolkit which aims to automatically filter pair-end raw data (fastq files), assemble genome, search for mitogenome sequences from the genome assembly result, annotate mitogenome (genbank file as result), and mitogenome visualization. MitoZ is available from `https://sourceforge.net/projects/mitoz/`.
 
 
 ## System requirment

@@ -63,7 +63,7 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
     --filter_taxa_method 1 \
     --requiring_taxa 'Arthropoda'
 
-For more details, please refer to `python3 MitoZ all -h`
+For more details, please refer to `python3 MitoZ.py all -h`
 
 
 ### 2 all2
@@ -95,7 +95,12 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 
 #### 3.2 Example
 
-    python3 MitoZ.py filter --fastq1 raw.1.fq.gz --fastq2 raw.2.fq.gz --fastq3 clean.1.fq.gz --fastq4 clean.2.fq.gz --outprefix test
+    python3 MitoZ.py filter \
+    --fastq1 raw.1.fq.gz \
+    --fastq2 raw.2.fq.gz \
+    --fastq3 clean.1.fq.gz \
+    --fastq4 clean.2.fq.gz \
+    --outprefix test
 
 
 ### 4 assemble

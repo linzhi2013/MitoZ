@@ -14,10 +14,14 @@ MitoZ is developed and tested under `Linux version 2.6.32-696.el6.x86_64 (mockbu
 
 ### Memory
 It takes ~100G when we tested MitoZ with `--thread_number 16`.
-See `INSTALL.md` for installation instruction.
 
 ## Get started
 MitoZ includes multiple functions, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.
+
+
+Make sure you are in the `mitozEnv` environment (see `INSTALL.md` for installation instruction.)
+
+    source activate mitozEnv
 
 ### Data requirement
 #### Pair-end (PE) fastq files

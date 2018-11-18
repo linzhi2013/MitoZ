@@ -53,7 +53,7 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 
 #### 1.2 Example
 
-    python3 MitoZ all --genetic_code 5 --clade Arthropoda --outprefix test \
+    python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 12 \
     --fastq1 raw.1.fq.gz \
     --fastq2 raw.2.fq.gz \
@@ -75,7 +75,7 @@ Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
 #### 2.2 Example
     
-    python3 MitoZ all --genetic_code 5 --clade Arthropoda --outprefix test \
+    python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
     --fastq1 clean.1.fq.gz \
     --fastq2 clean.2.fq.gz \
@@ -95,7 +95,7 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 
 #### 3.2 Example
 
-    python3 MitoZ filter --fastq1 raw.1.fq.gz --fastq2 raw.2.fq.gz --fastq3 clean.1.fq.gz --fastq4 clean.2.fq.gz --outprefix test
+    python3 MitoZ.py filter --fastq1 raw.1.fq.gz --fastq2 raw.2.fq.gz --fastq3 clean.1.fq.gz --fastq4 clean.2.fq.gz --outprefix test
 
 
 ### 4 assemble
@@ -107,7 +107,7 @@ Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
 #### 4.2 Example
     
-    python3 MitoZ assemble --genetic_code 5 --clade Arthropoda --outprefix test \
+    python3 MitoZ.py assemble --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
     --fastq1 clean.1.fq.gz \
     --fastq2 clean.2.fq.gz \
@@ -135,14 +135,14 @@ Otherwise, you still need following two files as input,
 
 #### 5.2 Example
 
-    python3 MitoZ findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test \
+    python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
     --from_soaptrans \
     --fastafile totoal_assembly.fa
 
 Or,
 
-    python3 MitoZ findmitoscaf --genetic_code 5 --clade Arthropoda \
+    python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda \
     --outprefix test --thread_number 8 \
     --fastq1 clean.1.fq.gz \
     --fastq2 clean.2.fq.gz \
@@ -162,7 +162,7 @@ A fasta file containing the mitochondrial seqeunces.
 
 #### 6.2 Example
 
-    python3 MitoZ annotate --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastafile mitogenome.fa
+    python3 MitoZ.py annotate --genetic_code 5 --clade Arthropoda --outprefix test --thread_number 8 --fastafile mitogenome.fa
 
 
 ### 7. visualize
@@ -175,7 +175,8 @@ e.g. `mitogenome.gb`
 A Genbank file.
 
 #### 7.1 Example
-`python3 MitoZ visualize --gb mitogenome.gb`
+
+    python3 MitoZ.py visualize --gb mitogenome.gb
 
 If you want to show sequencing depth along the mitogenome, you need to set `--fastq1` and `--fastq2` and `--depth`.
 
@@ -217,7 +218,7 @@ in the directory of `outprefix.assembly`.
 
 #### 2.2 Example
     
-    python3 MitoZ all2 --genetic_code 5 --clade Arthropoda --outprefix test \
+    python3 MitoZ.py all2 --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 12 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz \
     --fastq_read_length 150 --insert_size 250 \
     --run_mode 3 \

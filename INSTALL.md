@@ -26,7 +26,7 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.
 
     conda create  -n mitozEnv  -c conda-forge libgd=2.2.4 python=3.6.0 biopython==1.69 ete3==3.0.0b35
-    conda install -n mitozEnv -c bioconda perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl
+    conda install -y -n mitozEnv -c bioconda perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl
 
 
 # 3. Activate the `mitozEnv` environment

@@ -1,7 +1,7 @@
 # Manual of MitoZ
 
 ## About MitoZ
-MitoZ is a Python3-based toolkit which aims to automatically filter pair-end raw data (fastq files), assemble genome, search for mitogenome sequences from the genome assembly result, annotate mitogenome (genbank file as result), and mitogenome visualization. MitoZ is available from `https://sourceforge.net/projects/mitoz/`.
+MitoZ is a Python3-based toolkit which aims to automatically filter pair-end raw data (fastq files), assemble genome, search for mitogenome sequences from the genome assembly result, annotate mitogenome (genbank file as result), and mitogenome visualization. MitoZ is available from `https://github.com/linzhi2013/MitoZ`.
 
 
 ## System requirment
@@ -19,7 +19,8 @@ It takes ~100G when we tested MitoZ with `--thread_number 16`.
 MitoZ includes multiple functions, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.
 
 
-Make sure you are in the `mitozEnv` environment (see `INSTALL.md` for installation instruction.)
+**Important: make sure you are in the `mitozEnv` environment when you run MitoZ!**
+see `INSTALL.md` for installation instruction.
 
     source activate mitozEnv
 

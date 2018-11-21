@@ -34,7 +34,7 @@ The length of read1 and read2 must be equal. You should trim your data (e.g. use
 
 The insert size of pair-end library should be small insert size (<1000 bp). I do not recommend to use data of large insert size (>1000bp, mate-pair library), because this kind of data usually is not good as small insert size data.
 
-About 3G base pair (bp) is enough for mitochondrial genome assembly.
+About 2 to 3G base pair (bp) is enough for mitochondrial genome assembly.
 
 #### Fasta file
 When you annotate a mitogenome sequence(s) stored in fasta file, the sequence id can not be too long, or MitoZ will fail. This is for some limitation in BioPython that MitoZ invokes.
@@ -229,7 +229,7 @@ You should provide the quick mode assembly as input, including files:
 in the directory of `outprefix.assembly`.
 
 
-#### 2.2 Example
+#### 7.1 Example
     
     python3 MitoZ.py all2 --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 12 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz \
@@ -245,6 +245,31 @@ in the directory of `outprefix.assembly`.
 
 The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `outprefix.assembly2`.
 
+
+## Useful scripts
+
+    python3 bin/annotate/genbank_file_tool.py
+    usage: genbank_file_tool.py [-h] {cut,comrev,sort,select} ...
+
+    Description
+        A tool to deal with genbank records.
+
+    Version
+        0.0.1
+
+    Author
+        mengguanliang(at) genomics (dot) cn, BGI-Shenzhen.
+
+    positional arguments:
+      {cut,comrev,sort,select}
+        cut                 cutting sequences (5' and/or 3' end).
+        comrev              get complement reverse of genbank records
+        sort                sort the gene orders (input should all be circular
+                            records!!!)
+        select              output specific genbank records
+
+    optional arguments:
+      -h, --help            show this help message and exit
 
 ## Citation
 

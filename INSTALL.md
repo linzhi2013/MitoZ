@@ -10,10 +10,10 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
 # 1. Install Anaconda or Miniconda
 1. Anaconda: https://anaconda.org/anaconda/python
-2. Miniconda: https://conda.io/miniconda.html
+2. Miniconda: https://conda.io/miniconda.html (recommended)
 
 
-# 2. Install dependency with `conda`
+# 2. Install dependency with `conda` command
 
 ## 2.1 Set up channels
 
@@ -23,10 +23,10 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
 ### tips
 The download speeds from the above channels can be very slow, if this is the case to you,
-you can set other mirror channels, but make sure the `conda-forge` channel has the highest
+you can set up other mirror channels, but make sure the `conda-forge` channel has the highest
 priority (the last one to be added), followed by `bioconda` channel.
 
-For example, in china, you can set:
+For example, in China, you can set:
     
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
@@ -66,10 +66,12 @@ For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tut
 
 From `https://github.com/linzhi2013/MitoZ`
 
-    tar -jxvf MitoZ_v1.0.tgz
-    cd MitoZ_v1.0
+    tar -jxvf release_MitoZ_v1.0.tar.bz2
+    cd release_MitoZ_v1.0
     python3 MitoZ.py
 
 # 6. Important: make sure you are in the `mitozEnv` environment when you run MitoZ!
+If you write the run commands into a script file (e.g. `work.sh`), you should also add `source activate mitozEnv` into the
+script file ahead of the MitoZ commands.
 
 ********************************************************************

@@ -1,21 +1,40 @@
 Installation of MitoZ
 
-Guanliang Meng, 2018-11-18
+Guanliang Meng, 2018-11-27
 
 ********************************************************************
 
-# 0. System requirment: Linux
+We provide two options to use MitoZ:
+* A ready to run version of [Singularity container](https://www.sylabs.io/)
+* Source code with dependency to be installed with Anaconda or Miniconda.
+
+# 1. Singularity container
+
+## 1.1 Install Singularity
+See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions to install Singularity.
+
+## 1.2 Download the MitoZ container
+
+    singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ
+
+## 1.3 Run the MitoZ container
+
+   /path/to/MitoZ.simg --help
+
+# 2. Install from source code
+
+## 2.1 System requirment: Linux
 
 developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
-# 1. Install Anaconda or Miniconda
+# 3. Install Anaconda or Miniconda
 1. Anaconda: https://anaconda.org/anaconda/python
 2. Miniconda: https://conda.io/miniconda.html (recommended)
 
 
-# 2. Install dependency with `conda` command
+# 4. Install dependency with `conda` command
 
-## 2.1 Set up channels
+## 4.1 Set up channels
 
     conda config --add channels defaults
     conda config --add channels bioconda
@@ -38,17 +57,17 @@ Or,
 
 but I cannot ensure using mirror channels will always work. Good luck!
 
-## 2.2 Set up an isolated enviroment for MitoZ
+## 4.2 Set up an isolated enviroment for MitoZ
 
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.
 
     conda create  -n mitozEnv libgd=2.2.4 python=3.6.0 biopython=1.69 ete3=3.0.0b35 perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl blast=2.2.31  hmmer=3.1b2  bwa=0.7.12 samtools=1.3.1 infernal=1.1.1 tbl2asn openjdk
 
-# 3. Activate the `mitozEnv` environment
+# 5. Activate the `mitozEnv` environment
 
     source activate mitozEnv
 
-# 4. Install NCBI taxonomy database for ete3 package
+# 6. Install NCBI taxonomy database for ete3 package
 1. Network connection required.
 2. `HOME` directory must have more than 500M space available. If not, please refer to `https://github.com/linzhi2013/taxonomy_ranks/blob/master/README.md`
 
@@ -61,7 +80,7 @@ In the terminal, type `python3` then `Enter`, you will be into the Python intera
 For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
 
 
-# 5. Download the MitoZ package
+# 7. Download the MitoZ package
 
 From `https://github.com/linzhi2013/MitoZ`
 

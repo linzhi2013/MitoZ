@@ -19,7 +19,7 @@ See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions 
 
 ## 1.3 Run the MitoZ container
 
-   /path/to/MitoZ.simg --help
+    /path/to/MitoZ.simg --help
 
 # 2. Install from source code
 

@@ -16,11 +16,13 @@ MitoZ is developed and tested under `Linux version 2.6.32-696.el6.x86_64 (mockbu
 It takes ~100G when we tested MitoZ with `--thread_number 16`.
 
 ## Get started
+
+See `INSTALL.md` for installation instruction.
+
 MitoZ includes multiple functions, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.
 
 
 **Important: make sure you are in the `mitozEnv` environment when you run MitoZ!**
-see `INSTALL.md` for installation instruction.
 
     source activate mitozEnv
 
@@ -273,5 +275,5 @@ The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `ou
 
 ## Citation
 
-    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization
+    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization (submitted)
 

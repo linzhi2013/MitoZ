@@ -275,7 +275,5 @@ The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `ou
 
 ## Citation
 
-    MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization
-    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu
-    bioRxiv 489955; doi: https://doi.org/10.1101/489955
+    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization; doi: https://doi.org/10.1101/489955
 

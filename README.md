@@ -184,6 +184,9 @@ If you want to see the abundance along the mitogenome sequences, you will also n
 
 `visualize` module is to visualize the genbank file.
 
+`--bgc` parameter (in the "Outfile setting" parameter section) can be an image file (e.g. the species image). In this way,
+the center part of the output figure will be the species image. I will update this parameter instruction in the program in MitoZ's future version.
+
 #### 7.1 Input files
 e.g. `mitogenome.gb`
 

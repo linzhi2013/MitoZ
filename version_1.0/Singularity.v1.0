@@ -32,7 +32,7 @@ From: ubuntu:16.04
 
     conda install -y libgd=2.2.4 python=3.6.0 biopython=1.69 ete3=3.0.0b35  perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl blast=2.2.31  hmmer=3.1b2  bwa=0.7.12 samtools=1.3.1 infernal=1.1.1 tbl2asn openjdk
 
-    conda clean -a
+    conda clean -y -a
 
     # download MitoZ and install
     mkdir /mitoz_tmp && cd /mitoz_tmp && wget -c https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_1.0/release_MitoZ_v1.0.tar.bz2 &&  tar -jxvf release_MitoZ_v1.0.tar.bz2  && mv release_MitoZ_v1.0 /app

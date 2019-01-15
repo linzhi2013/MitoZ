@@ -15,7 +15,7 @@ See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions 
 
 ## 1.2 Download the MitoZ container
 
-    singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ
+    singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ:v1.0
 
 ## 1.3 Run the MitoZ container
 

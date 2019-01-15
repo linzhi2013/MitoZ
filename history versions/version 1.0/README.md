@@ -17,7 +17,7 @@ It takes ~100G when we tested MitoZ with `--thread_number 16`.
 
 ## Get started
 
-See `INSTALL_v1.0.md` for installation instruction.
+See `INSTALL.md` for installation instruction.
 
 MitoZ includes multiple functions, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.
 

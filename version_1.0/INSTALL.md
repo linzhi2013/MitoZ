@@ -5,7 +5,7 @@ Guanliang Meng, 2018-11-27
 ********************************************************************
 
 We provide two options to use MitoZ:
-* A ready to run version of [Singularity container](https://www.sylabs.io/)
+* A ready to run version of [Singularity container](https://www.sylabs.io/) [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/1955)
 * Source code with dependency to be installed with Anaconda or Miniconda.
 
 # 1 Singularity container

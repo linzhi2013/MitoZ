@@ -1,0 +1,236 @@
+
+type aa
+real int
+endtype
+
+type codon
+real int
+endtype
+
+
+#
+# Stuff for PROTEIN
+#
+
+type   PROTEIN
+real   ComplexSequence*
+dbtype ProteinDB*
+init   init_ProteinDB
+reload reload_ProteinDB
+close  close_ProteinDB
+addentry dataentry_add_ProteinDB
+name   get_allocd_name_ComplexSequence
+hardlink hard_link_ComplexSequence
+free   free_ComplexSequence
+threadsafe
+endtype
+
+
+method AMINOACID
+map CSEQ_PROTEIN_AMINOACID
+arg PROTEIN
+arg int
+return aa
+endmethod
+
+
+#
+# End of protein type and methods
+#
+
+
+
+type COMPMAT
+real CompMat*
+endtype
+
+method AAMATCH
+map CompMat_AAMATCH
+arg COMPMAT
+arg aa
+arg aa
+return int
+endmethod
+
+
+type DNACOMPMAT
+real DnaMatrix*
+endtype
+
+method DNABASEMATCH
+map DnaMatrix_MATCH
+arg DNACOMPMAT
+arg base
+arg base
+return int
+endmethod
+
+type CODONMATRIX
+real CodonMatrixScore*
+endtype
+
+method CODON_MATCH
+map CodonMatrix_MATCH
+arg CODONMATRIX
+arg codon
+arg codon
+return int
+endmethod
+
+
+#
+# Genomic types and methods
+#
+
+
+type GENOMIC
+real ComplexSequence*
+dbtype GenomicDB*
+init   init_GenomicDB
+reload reload_GenomicDB
+close  close_GenomicDB
+addentry dataentry_add_GenomicDB
+name   get_allocd_name_ComplexSequence
+hardlink hard_link_ComplexSequence
+free   free_ComplexSequence
+threadsafe
+endtype
+
+method GENOMIC_CODON
+map CSEQ_GENOMIC_CODON
+arg GENOMIC
+arg int
+return codon
+endmethod
+
+method GENOMIC_BASE
+map CSEQ_GENOMIC_BASE
+arg GENOMIC
+arg int
+return base
+endmethod
+
+method GENOMIC_5SS
+map CSEQ_GENOMIC_5SS
+arg GENOMIC
+arg int
+return int
+endmethod
+
+method GENOMIC_3SS
+map CSEQ_GENOMIC_3SS
+arg GENOMIC
+arg int
+return int
+endmethod
+
+
+method GENOMIC_REPEAT
+map CSEQ_GENOMIC_REPEAT
+arg GENOMIC
+arg int
+return int
+endmethod
+
+method GENOMIC_CDS_POT
+map CSEQ_GENOMIC_CDSPOT
+arg GENOMIC
+arg int
+return int
+endmethod
+
+
+
+#
+# Cdna Methods
+#
+
+
+type CDNA
+real ComplexSequence*
+dbtype cDNADB*
+init   init_cDNADB
+reload reload_cDNADB
+close  close_cDNADB
+addentry dataentry_add_cDNADB
+hardlink hard_link_ComplexSequence
+free   free_ComplexSequence
+threadsafe
+endtype
+
+method CDNA_CODON
+map CSEQ_CDNA_CODON
+arg CDNA
+arg int
+return codon
+endmethod
+
+method CDNA_BASE
+map CSEQ_CDNA_BASE
+arg CDNA
+arg int
+return base
+endmethod
+
+method CDNA_SEQ_POS
+map CSEQ_SEQ
+arg CDNA
+arg int
+return char*
+endmethod
+
+
+#
+# Dna mehtods
+#
+
+type DNA
+real ComplexSequence*
+endtype
+
+method DNA_BASE
+map CSEQ_DNA_BASE
+arg DNA
+arg int
+return base
+endmethod
+
+type DNAMAT
+real DnaMatrix*
+endtype
+
+method DNAMATCH
+map DnaMatrix_MATCH
+arg DNAMAT
+arg base
+arg base
+return int
+endmethod
+
+# genewise models
+
+type   CDNA_HMM
+real   GeneWiseScore*
+dbtype GeneWiseDB*
+init   init_GeneWiseDB
+reload reload_GeneWiseDB
+close  close_GeneWiseDB
+addentry dataentry_add_GeneWiseDB
+hardlink hard_link_GeneWiseScore
+free     free_GeneWiseScore
+threadsafe
+endtype
+
+type GENEWISEMODEL
+real GeneWiseScore*
+dbtype GeneWiseDB*
+init   init_GeneWiseDB
+reload reload_GeneWiseDB
+close  close_GeneWiseDB
+addentry dataentry_add_GeneWiseDB
+hardlink hard_link_GeneWiseScore
+free     free_GeneWiseScore
+threadsafe
+endtype
+
+

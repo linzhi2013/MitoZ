@@ -1,0 +1,18 @@
+
+v2.2
+20180114
+1. add configure file support
+
+v2.1
+20180110
+1. add single-end data support
+
+v2.0
+20180104
+1. remove the useless codes
+2. to be more user-friendly
+
+v1.0
+20181121
+1. use conda to install blastn and other programs, MitoZ uses those command from the PATH variable
+

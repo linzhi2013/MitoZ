@@ -63,7 +63,7 @@ MitoZ supports simple data pretreatment (remove low quality, many Ns reads, dupl
 thus you can provide MitoZ the raw data (fastq files) from WGS experiments directly.
 In this case, you can use the `all` or `filter` module to perform data filtering.
 
-Or, you can provide MitoZ the clean data, which have filtered by other tools.
+Or, you can provide MitoZ the clean data, which have been filtered by other tools.
 
 ## 4.4 Modules support both single-end data and pair-end data
 
@@ -440,7 +440,8 @@ in the directory of `outprefix.assembly`.
 The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `outprefix.assembly2`.
 
 
-# 14. 
+# 14. Rearrangement of mitogenome basing on reference mitogeome
+
 
 # Useful scripts
 
@@ -478,5 +479,6 @@ v2.2
 
 # Citation
 
-    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization
+    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization; doi: https://doi.org/10.1101/489955
+
 

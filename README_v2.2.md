@@ -34,15 +34,15 @@ Now create a directory for one sample:
     mkdir ~/example
     cd ~/example
 
-## 3.1 Data requirement
+# 4. Data requirement
 
-### 3.1.1 Material source
+## 4.1 Material source
 
-The most preferable data for mitochondrial genome assembly is alway the data with high
+The most preferable data for mitochondrial genome assembly is always data with high
 ratio of mitochondrial derived reads and little contamination. For example, tissue samples
 may be better than blood samples or gut samples.
 
-### 3.1.2 Requirment of data size and insert size
+## 4.2 Requirment of data size and insert size
 
 About 1.5 to 3G base pair (bp) is enough for mitochondrial genome assembly.
 
@@ -55,7 +55,7 @@ The length of read1 and read2 must be equal. You should trim your data (e.g. use
 The insert size of pair-end library should be small insert size (<1000 bp). I do not recommend to use data of large insert size (>1000bp, mate-pair library), because this kind of data usually is not good as small insert size data.
 
 
-### 3.1.3 Data pretreatment
+## 4.3 Data pretreatment
 
 MitoZ supports simple data pretreatment (remove low quality, many Ns reads, duplications),
 thus you can provide MitoZ the raw data (fastq files) from WGS experiments directly.
@@ -63,7 +63,7 @@ In this case, you can use the `all` or `filter` module to perform data filtering
 
 Or, you can provide MitoZ the clean data, which have filtered by other tools.
 
-### 3.1.4 Modules support both single-end data and pair-end data
+## 4.4 Modules support both single-end data and pair-end data
 
 * `all2`
 
@@ -74,7 +74,7 @@ Or, you can provide MitoZ the clean data, which have filtered by other tools.
 * `visualize`
 
 
-### 3.1.5 Modules support pair-end data only
+## 4.5 Modules support pair-end data only
 
 * `all`
 
@@ -83,30 +83,30 @@ Or, you can provide MitoZ the clean data, which have filtered by other tools.
 * `findmitoscaf`(needs fastq only when the input assembly (containing nuclear and mitochondrial sequences) is not from SOAPdenovo-Trans or mitoAssemble, to caculate the sequence sequencing depth)
 
 
-### 3.1.6 Fasta file
+## 4.6 Fasta file
 
 When you annotate a mitogenome sequence(s) stored in fasta file, the sequence id can not be too long, or MitoZ will fail. This is for some limitation in BioPython that MitoZ invokes.
 
 
-### 3.1.7 Genetic code
+## 4.7 Genetic code
 
 It is important to set a correct genetic code for MitoZ (`--genetic_code` option). Usually, arthropods use the invertebrate mitochondrial code (`--genetic_code 5`), and mammals use the vertebrate mitochondrial code (`--genetic_code 2`).Please refer to https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for more details.
 
 MitoZ use the genetic code for annotating the Protein coding genes (PCGs) of mitochondrial genome.
 
 
-### 3.1.8 Taxa group
+## 4.8 Taxa group
 
 It is also important to set a correct taxa group for MitoZ (`--clade` option).
 
 MitoZ use the `--clade` option to choose corresponding database (HMM modules, CM modules, protein reference sequences).
 
-## 4. Supporting for specifying parameters in a configure file
+# 5. Supporting for specifying parameters in a configure file
 
 Now `MitoZ` supports use a configure file to set the parameter, besides using the command
 line way (as the examples in the later sections).
 
-### 4.1 create a configure file for desired module
+## 5.1 create a configure file for desired module
 
 For example,
 
@@ -117,21 +117,20 @@ will a file `mitoz_all_config.txt`, which contains the paramters same as output 
 Then modify the file `mitoz_all_config.txt` as the instructions in the file.
 
 
-### 4.2 run the module
+## 5.2 run the module
 
     python3 MitoZ.py all --config mitoz_all_config.txt
 
-### 4.2
 
-## 4. `all` module
+# 6. `all` module
 
 `all` module requires only two input pair-end fastq files, and outputs a genbank file containing mitochondrial genome sequences and annotation information.
 
-### 4.1 Input files
+## 6.1 Input files
 
 Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `1.adapter.list.gz` and `2.adapter.list.gz`.
 
-### 4.2 Example
+## 6.2 Example
 
     python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix ZZZ \
     --thread_number 12 \
@@ -145,7 +144,7 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 
 For more details, please refer to `python3 MitoZ.py all -h`
 
-### 4.3 directory structure
+## 6.3 directory structure
 
 
     example
@@ -242,14 +241,14 @@ potential NUMTs, or want to know if there some sequences of non-target-species.
 When you use other modules, some of those files (directories) may be absent.
 
 
-## 5 `all2` module
+# 7 `all2` module
 
 `all2` is amolst the same as `all`, except that `all2` doesn't filter the input fastq files.
 
-#### 5.1 Input files
+## 7.1 Input files
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
-#### 5.2 Example
+## 7.2 Example
 
     python3 MitoZ.py all --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
@@ -262,14 +261,14 @@ Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
     --requiring_taxa 'Arthropoda'
 
 
-## 6. `filter` module
+# 8. `filter` module
 
 `filter` is to filter input raw fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), outputs clean fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`)
 
-#### 3.1 Input files
+## 8.1 Input files
 Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `1.adapter.list.gz` and `2.adapter.list.gz`.
 
-#### 3.2 Example
+## 8.2 Example
 
     python3 MitoZ.py filter \
     --fastq1 raw.1.fq.gz \
@@ -279,14 +278,14 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
     --outprefix test
 
 
-### 4 assemble
+# 9. `assemble` module
 
 `assemble` is to assemble `clean.1.fq.gz` and `clean.2.fq.gz`, search for mitochondrial sequences from the assembly. Output is a mitochondrial sequence file in fasta format.
 
-#### 4.1 Input files
+## 9.1 Input files
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
 
-#### 4.2 Example
+## 9.2 Example
 
     python3 MitoZ.py assemble --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
@@ -299,11 +298,11 @@ Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).
     --requiring_taxa 'Arthropoda'
 
 
-### 5 findmitoscaf
+# 10. `findmitoscaf` module
 
 `findmitoscaf` is to search for the mitochondrial sequences from fasta file which contains non-mitochondrial sequences. Output is a mitochondrial sequence file in fasta format.
 
-#### 5.1 Input files
+## 10.1 Input files
 * `totoal_assembly.fa`
 A file contains non-mitochondrial sequences.
 
@@ -314,7 +313,7 @@ Otherwise, you still need following two files as input,
 * `clean.1.fq.gz` and `clean.2.fq.gz`
 
 
-#### 5.2 Example
+## 10.2 Example
 
     python3 MitoZ.py findmitoscaf --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 8 \
@@ -331,16 +330,16 @@ Or,
     --fastafile totoal_assembly.fa
 
 
-### 6 annotate
+# 11. `annotate` module
 
 `annotate` is to annotate the input mitogenome sequence, including protein coding genes (PCGs), tRNA genes and rRNA genes. Output is a genbank file containing mitochondrial genome sequences and annotation information.
 
-#### 6.1 Input files
+## 11.1 Input files
 e.g. `mitogenome.fa`
 
 A fasta file containing the mitochondrial seqeunces.
 
-#### 6.2 Example
+## 11.2 Example
 
     python3 MitoZ.py annotate --genetic_code 5 --clade Arthropoda \
     --outprefix test --thread_number 8 \
@@ -349,41 +348,23 @@ A fasta file containing the mitochondrial seqeunces.
 
 If you want to see the abundance along the mitogenome sequences, you will also need to set `--fastq1` and `--fastq2`.
 
-### 7. visualize
+# 12. visualize
 
 `visualize` module is to visualize the genbank file.
 
-#### 7.1 Input files
+## 12.1 Input files
 e.g. `mitogenome.gb`
 
 A Genbank file.
 
-#### 7.1 Example
+## 12.2 Example
 
     python3 MitoZ.py visualize --gb mitogenome.gb
 
 If you want to show sequencing depth along the mitogenome, you need to set `--fastq1` and `--fastq2` and `--depth`.
 
 
-## Result files
-
-The result files should be in `outprefix.result` directory.
-
-`work*.scafSeq` is the assembly file output by SOAPdenovo-Trans.
-
-`*_mitoscaf.fa.fsa` is the mitogenome in fasta format.
-
-`*_mitoscaf.fa.gbf` is the mitogenome in Genbank format.
-
-`*_mitoscaf.fa.val` and `errorsummary.val` are output by tbl2asn, you should check if there are annotation problems.
-
-`*.statistic`: how many PCGs, rRNA genes, and tRNA genes have been annotated for each sequence.
-
-
-`visualization` (and `visualization.SeqCut`) contains files of visualized mitogenome in svg and png format.
-
-
-## Multi-Kmer mode
+# 13. Multi-Kmer mode
 when there are missing PCGs after you run MitoZ in quick mode (`--run_mode 2`), you can try with the multi-Kmer mode (`--run_mode 3`).
 
 You should provide the quick mode assembly as input, including files:
@@ -400,7 +381,7 @@ You should provide the quick mode assembly as input, including files:
 in the directory of `outprefix.assembly`.
 
 
-#### 7.1 Example
+## 13.1 Example
 
     python3 MitoZ.py all2 --genetic_code 5 --clade Arthropoda --outprefix test \
     --thread_number 12 --fastq1 clean.1.fq.gz --fastq2 clean.2.fq.gz \
@@ -417,7 +398,7 @@ in the directory of `outprefix.assembly`.
 The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `outprefix.assembly2`.
 
 
-## Useful scripts
+# Useful scripts
 
     python3 bin/annotate/genbank_file_tool.py
     usage: genbank_file_tool.py [-h] {cut,comrev,sort,select} ...
@@ -442,7 +423,7 @@ The result file is `outprefix.multiKmer_seq_picked.clean.fa` under directory `ou
     optional arguments:
       -h, --help            show this help message and exit
 
-## change log
+# change log
 v2.2
 201801
 1. add configure file support
@@ -451,7 +432,7 @@ v2.2
 4. to be more user-friendly
 
 
-## Citation
+# Citation
 
     Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization
 

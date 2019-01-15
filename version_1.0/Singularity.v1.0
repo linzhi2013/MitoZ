@@ -35,7 +35,7 @@ From: ubuntu:16.04
     conda clean -a
 
     # download MitoZ and install
-    mkdir /mitoz_tmp && cd /mitoz_tmp && wget  https://raw.githubusercontent.com/linzhi2013/MitoZ/master/release_MitoZ_v1.0.tar.bz2 &&  tar -jxvf release_MitoZ_v1.0.tar.bz2  && mv release_MitoZ_v1.0 /app
+    mkdir /mitoz_tmp && cd /mitoz_tmp && wget -c https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_1.0/release_MitoZ_v1.0.tar.bz2 &&  tar -jxvf release_MitoZ_v1.0.tar.bz2  && mv release_MitoZ_v1.0 /app
     rm -rf /mitoz_tmp
 
 

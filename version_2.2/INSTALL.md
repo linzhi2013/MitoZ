@@ -1,7 +1,6 @@
-# to do: update the content for version 2.2
 Installation of MitoZ
 
-Guanliang Meng, 2018-11-18
+Guanliang Meng, 2019-01-16
 
 ********************************************************************
 
@@ -65,10 +64,10 @@ For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tut
 
 # 5. Download the MitoZ package
 
-From `https://github.com/linzhi2013/MitoZ`
+Download from `https://github.com/linzhi2013/MitoZ/tree/master/version_2.2`
 
-    tar -jxvf release_MitoZ_v1.0.tar.bz2
-    cd release_MitoZ_v1.0
+    tar -jxvf release_MitoZ_v2.2.tar.bz2
+    cd release_MitoZ_v2.2
     python3 MitoZ.py
 
 # 6. Important: make sure you are in the `mitozEnv` environment when you run MitoZ!

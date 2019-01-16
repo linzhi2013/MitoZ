@@ -511,7 +511,7 @@ between portions.
 
 # 15. Other useful scripts
 
-- To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.py`.
+## 15.1 To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.py`.
 
     $ python3 genbank_file_tool.py
     usage: genbank_file_tool.py [-h] {cut,comrev,sort,select} ...
@@ -537,53 +537,53 @@ between portions.
       -h, --help            show this help message and exit
 
 
-- To check if the sequence is circular, use script `useful_scripts/circle_check.py`.
+## 15.2 To check if the sequence is circular, use script `useful_scripts/circle_check.py`.
 
 
-    $ python3 circle_check.py
+        $ python3 circle_check.py
 
-    Description
+        Description
 
-        Checking whether the sequences are circular when the sequences have
-        length >= 12Kbp
+            Checking whether the sequences are circular when the sequences have
+            length >= 12Kbp
 
-    Usage
+        Usage
 
-        python3 circle_check.py  <in.fasta>  <outPrefix> <mismatch_allowed>
+            python3 circle_check.py  <in.fasta>  <outPrefix> <mismatch_allowed>
 
-    output files:
+        output files:
 
-    1. <outPrefix>.mitogenome.fa
-    All the sequences from <in.fasta>.
+        1. <outPrefix>.mitogenome.fa
+        All the sequences from <in.fasta>.
 
-    The sequence id line will be like:
-    >C1 topology=circular
-    >C2 topology=linear
+        The sequence id line will be like:
+        >C1 topology=circular
+        >C2 topology=linear
 
-    For the circular mt sequence, the overlapping region (the second `ATGCNN`
-    below) has been removed (below is an example)
+        For the circular mt sequence, the overlapping region (the second `ATGCNN`
+        below) has been removed (below is an example)
 
-    ATGCNNNNN[ATGCNN]
+        ATGCNNNNN[ATGCNN]
 
-    Assuming `ATGCNNNNN` is a circular mt sequence, `ATGCNN` are the overlapping
-    regions.
+        Assuming `ATGCNNNNN` is a circular mt sequence, `ATGCNN` are the overlapping
+        regions.
 
-    2. <outPrefix>.start2end_for-circular-mt-only
-    This file contains the circular sequences only, and the first 300 bp of each
-    has been moved to the end of the sequence, just for better reads mapping. You
-    can check the sequencing depth around the 'joining site' (-300 bp) using the
-    `annotate` module of MitoZ, to confirm if the sequence is really circular.
+        2. <outPrefix>.start2end_for-circular-mt-only
+        This file contains the circular sequences only, and the first 300 bp of each
+        has been moved to the end of the sequence, just for better reads mapping. You
+        can check the sequencing depth around the 'joining site' (-300 bp) using the
+        `annotate` module of MitoZ, to confirm if the sequence is really circular.
 
-    3. <outPrefix>.overlap_information
-    The overlapping sequence detected for the circular sequences.
+        3. <outPrefix>.overlap_information
+        The overlapping sequence detected for the circular sequences.
 
-    # change log
-    v2.2
-    201801
-    1. add configure file support
-    2. add single-end data support
-    3. remove the useless codes
-    4. to be more user-friendly
+        # change log
+        v2.2
+        201801
+        1. add configure file support
+        2. add single-end data support
+        3. remove the useless codes
+        4. to be more user-friendly
 
 
 # Citation

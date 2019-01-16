@@ -199,8 +199,8 @@ Visualizations of the mitogenome in `ZZZ_mitoscaf.fa.gbf`.
 * `ZZZ.most_related_species.txt`
 
 The most closely related species of the mitogenome in `ZZZ_mitoscaf.fa.gbf`. This information
-comes protein coding gene (PCG) annotations, during which each PCG will be assigned to a protein
-sequence of related species by the Genewise program. The most occurrence of related speices
+comes from protein coding gene (PCG) annotations, during which each PCG will be assigned to a protein
+sequence of related species by the Genewise program. The related speices of most occurrence 
 for each sequence will be reported in `ZZZ.most_related_species.txt`.
 
 * `ZZZ_mitoscaf.fa.gbf`, `ZZZ.fasta`, `ZZZ_mitoscaf.fa.sqn` and `ZZZ_mitoscaf.fa.tbl`.

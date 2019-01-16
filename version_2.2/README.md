@@ -224,7 +224,7 @@ PCGs besides the mitochondrial sequences will be output by MitoZ intendedly.
 
 * `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna`
 
-The individual gene sequences in fasta format.
+The individual gene sequences in fasta format, extracted from `ZZZ_mitoscaf.fa.gbf`.
 
 <br>
 
@@ -241,6 +241,10 @@ the sequencing depth distribution of sequences around such regions from the
 visualization result files (`circos.png` and `circos.svg`).
 
 <br>
+
+*Below two points are not part of the final mitogenome results, but are output just in
+case the users want to know more about those information instead of the mitogeome of
+target species*.
 
 * `work71.mitogenome.fa` and `work71.most_related_species.txt`
 

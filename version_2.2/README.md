@@ -217,7 +217,8 @@ The most occurrence related speices for each sequence will be reported in `ZZZ.m
 
 The mitogenome files in different format. **The sequences whose sequence ids have
 `_FivePCGs` suffixs (if any) are not considered as our mitogenome of target species,
-and they are output intendedly for further inspection by users**.
+and they are output intendedly for further inspection by users**. All sequences with ≥ 5
+PCGs besides the mitochondrial sequences will be output by MitoZ intendedly.
 
 <br>
 

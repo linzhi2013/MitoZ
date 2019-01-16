@@ -541,7 +541,7 @@ use the script `useful_scripts/genbank_file_tool.py`.
 
 ## 15.2 To check if the sequence is circular
 
-use script `useful_scripts/circle_check.py`.
+use the script `useful_scripts/circle_check.py`.
 
 
         $ python3 circle_check.py

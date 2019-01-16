@@ -430,7 +430,7 @@ A Genbank file.
 
     $ python3 MitoZ.py visualize --gb mitogenome.gb
 
-If you want to show sequencing depth along the mitogenome, you need to set `--fastq1` and/or `--fastq2` and `--depth`.
+If you want to show sequencing depth along the mitogenome, you need to set `--fastq1` and/or `--fastq2` or `--depth`.
 
 
 # 13. Multi-Kmer mode

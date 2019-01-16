@@ -263,8 +263,8 @@ These `*.low_abundance*` and `*.high_abundance*` files, which are the sequences 
 or high abundances but not selected as outputs by MitoZ.
 
 *These sequences, together with the sequences whose sequence ids have `_FivePCGs` suffixs in `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta` (if any), may be useful if, for
-example, you want to find potential NUMTs, or want to know if there some sequences of
-non-target-species*.
+example, you want to find potential NUMTs, or want to know if there are some sequences
+of non-target-species*.
 
 <br>
 

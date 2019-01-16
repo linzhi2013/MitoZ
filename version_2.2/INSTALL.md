@@ -17,9 +17,9 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
 ## 2.1 Set up channels
 
-    conda config --add channels defaults
-    conda config --add channels bioconda
-    conda config --add channels conda-forge
+    $ conda config --add channels defaults
+    $ conda config --add channels bioconda
+    $ conda config --add channels conda-forge
 
 ### tips
 The download speeds from the above channels can be very slow, if this is the case to you,
@@ -27,16 +27,15 @@ you can set up other mirror channels, but make sure the `conda-forge` channel ha
 priority (the last one to be added), followed by `bioconda` channel.
 
 For example, in China, you can set:
-    
-    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+
+    $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+    $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 
 Or,
 
-    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
-    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+    $ conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
+    $ conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
 
-but I cannot ensure using mirror channels will always work. Good luck!
 
 ## 2.2 Set up an isolated enviroment for MitoZ
 
@@ -47,7 +46,7 @@ It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`
 
 # 3. Activate the `mitozEnv` environment
 
-    source activate mitozEnv
+    $ source activate mitozEnv
 
 # 4. Install NCBI taxonomy database for ete3 package
 1. Network connection required.
@@ -66,9 +65,9 @@ For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tut
 
 Download from `https://github.com/linzhi2013/MitoZ/tree/master/version_2.2`
 
-    tar -jxvf release_MitoZ_v2.2.tar.bz2
-    cd release_MitoZ_v2.2
-    python3 MitoZ.py
+    $ tar -jxvf release_MitoZ_v2.2.tar.bz2
+    $ cd release_MitoZ_v2.2
+    $ python3 MitoZ.py
 
 # 6. Important: make sure you are in the `mitozEnv` environment when you run MitoZ!
 If you write the run commands into a script file (e.g. `work.sh`), you should also add `source activate mitozEnv` into the

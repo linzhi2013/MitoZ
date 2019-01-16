@@ -511,7 +511,9 @@ between portions.
 
 # 15. Other useful scripts
 
-## 15.1 To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.py`.
+## 15.1 To handle the a Genbank file
+
+use the script `useful_scripts/genbank_file_tool.py`.
 
     $ python3 genbank_file_tool.py
     usage: genbank_file_tool.py [-h] {cut,comrev,sort,select} ...
@@ -537,7 +539,9 @@ between portions.
       -h, --help            show this help message and exit
 
 
-## 15.2 To check if the sequence is circular, use script `useful_scripts/circle_check.py`.
+## 15.2 To check if the sequence is circular
+
+use script `useful_scripts/circle_check.py`.
 
 
         $ python3 circle_check.py
@@ -577,13 +581,16 @@ between portions.
         3. <outPrefix>.overlap_information
         The overlapping sequence detected for the circular sequences.
 
-        # change log
-        v2.2
-        201801
-        1. add configure file support
-        2. add single-end data support
-        3. remove the useless codes
-        4. to be more user-friendly
+# change log
+
+v2.2
+
+201801
+
+1. add configure file support
+2. add single-end data support
+3. remove the useless codes
+4. to be more user-friendly
 
 
 # Citation

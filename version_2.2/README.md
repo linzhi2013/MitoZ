@@ -511,7 +511,7 @@ between portions.
 
 # 15. Other useful scripts
 
-## 15.1 To handle the a Genbank file
+## 15.1 To handle a Genbank file
 
 use the script `useful_scripts/genbank_file_tool.py`.
 

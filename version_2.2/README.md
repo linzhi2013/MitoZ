@@ -187,20 +187,20 @@ Files in `ZZZ.result` including:
 
 A brief instructions about each file in the `ZZZ.result` directory.
 
-
+<br><br>
 
 * `summary.txt`
 
 A summary about the mitogenome in `ZZZ_mitoscaf.fa.gbf`, including a list of genes,
 numbers of genes recovered totally, and what genes may be missing.
 
-
+<br><br>
 
 * `circos.png` and `circos.svg`
 
 Visualizations of the mitogenome in `ZZZ_mitoscaf.fa.gbf`.
 
-
+<br><br>
 
 * `ZZZ.most_related_species.txt`
 
@@ -209,7 +209,7 @@ comes from protein coding gene (PCG) annotations, during which each PCG will be 
 sequence of related species by the Genewise program. The most occurrence related speices 
 for each sequence will be reported in `ZZZ.most_related_species.txt`.
 
-
+<br><br>
 
 * `ZZZ_mitoscaf.fa.gbf`, `ZZZ.fasta`, `ZZZ_mitoscaf.fa.sqn` and `ZZZ_mitoscaf.fa.tbl`.
 
@@ -217,13 +217,13 @@ The mitogenome files in different format. The sequences whose sequence ids have 
 (if any) are not considered as our mitogenome of target species, and they are output intendedly
 for further inspection by users.
 
-
+<br><br>
 
 * `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna`
 
 The individual gene sequences in fasta format.
 
-
+<br><br>
 
 * `ZZZ_mitoscaf.fa.val` and `errorsummary.val`
 
@@ -236,7 +236,7 @@ annotation, mutation, incorrect genetic code, or the sequence simply comes from 
 mitochondrial DNA segments (NUMTs). You may inspect the sequencing depth distribution
 of sequences around such regions from the visualization result files (`circos.png` and `circos.svg`).
 
-
+<br><br>
 
 * `work71.mitogenome.fa` and `work71.most_related_species.txt`
 
@@ -247,7 +247,7 @@ regions between 5' and 3' ends. *In such a case, MitoZ will detect the overlappi
 region and trim it, assuming the sequence is circular*, resulting files
 `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta`.
 
-
+<br><br>
 
 * `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
 
@@ -257,7 +257,8 @@ or high abundances but not selected as outputs by MitoZ.
 These sequences, together with the sequences whose sequence ids have `_FivePCGs` suffixs in `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta` (if any), may be useful if, for example, you want to find
 potential NUMTs, or want to know if there some sequences of non-target-species.
 
-
+<br><br>
+<br><br>
 
 When you use other modules, some of those files (directories) may be absent.
 

@@ -23,6 +23,8 @@ See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions 
 
 ## 1.4 You can also `shell` into the container
 
+In the host, run
+
     $ singularity shell /path/to/MitoZ.simg
 
 In the container, run

@@ -187,14 +187,20 @@ Files in `ZZZ.result` including:
 
 A brief instructions about each file in the `ZZZ.result` directory.
 
+
+
 * `summary.txt`
 
 A summary about the mitogenome in `ZZZ_mitoscaf.fa.gbf`, including a list of genes,
 numbers of genes recovered totally, and what genes may be missing.
 
+
+
 * `circos.png` and `circos.svg`
 
 Visualizations of the mitogenome in `ZZZ_mitoscaf.fa.gbf`.
+
+
 
 * `ZZZ.most_related_species.txt`
 
@@ -203,15 +209,21 @@ comes from protein coding gene (PCG) annotations, during which each PCG will be 
 sequence of related species by the Genewise program. The most occurrence related speices 
 for each sequence will be reported in `ZZZ.most_related_species.txt`.
 
+
+
 * `ZZZ_mitoscaf.fa.gbf`, `ZZZ.fasta`, `ZZZ_mitoscaf.fa.sqn` and `ZZZ_mitoscaf.fa.tbl`.
 
 The mitogenome files in different format. The sequences whose sequence ids have `_FivePCGs` suffixs
 (if any) are not considered as our mitogenome of target species, and they are output intendedly
 for further inspection by users.
 
+
+
 * `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna`
 
 The individual gene sequences in fasta format.
+
+
 
 * `ZZZ_mitoscaf.fa.val` and `errorsummary.val`
 
@@ -225,6 +237,7 @@ mitochondrial DNA segments (NUMTs). You may inspect the sequencing depth distrib
 of sequences around such regions from the visualization result files (`circos.png` and `circos.svg`).
 
 
+
 * `work71.mitogenome.fa` and `work71.most_related_species.txt`
 
 The mitogenome sequences from each kmer (e.g. kmer 71) assembly and their most closely related species.
@@ -233,6 +246,8 @@ and `ZZZ.fasta`, if the mitogenome sequence in `work71.mitogenome.fa` has overla
 regions between 5' and 3' ends. *In such a case, MitoZ will detect the overlapping
 region and trim it, assuming the sequence is circular*, resulting files
 `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta`.
+
+
 
 * `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
 

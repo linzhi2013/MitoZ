@@ -21,6 +21,20 @@ See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions 
 
     $ /path/to/MitoZ.simg --help
 
+## 1.4 You can also `shell` into the container
+
+    $ singularity shell /path/to/MitoZ.simg
+
+In the container, run
+
+    $ /app/anaconda/bin/python3 /app/release_MitoZ_v2.2/MitoZ.py -h
+
+some useful scripts are in `/app/release_MitoZ_v2.2/useful_scripts`
+
+    $ ls -lhrt /app/release_MitoZ_v2.2/useful_scripts
+
+To learn more about how to use Singularity, please refer to https://www.sylabs.io/docs/.
+
 # 2 Install from source code
 
 ## 2.1 System requirment: Linux

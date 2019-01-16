@@ -26,7 +26,7 @@ MitoZ includes multiple modules, including `all`, `all2`, `filter`, `assemble`, 
 
 **Important: make sure you are in the `mitozEnv` environment when you run MitoZ!**
 
-    source activate mitozEnv
+    $ source activate mitozEnv
 
 see `INSTALL.md` for installation instruction.
 
@@ -511,7 +511,7 @@ between portions.
 
 # 15. Other useful scripts
 
-To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.py`.
+- To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.py`.
 
     $ python3 genbank_file_tool.py
     usage: genbank_file_tool.py [-h] {cut,comrev,sort,select} ...
@@ -536,13 +536,54 @@ To handle the a Genbank file, use the script `useful_scripts/genbank_file_tool.p
     optional arguments:
       -h, --help            show this help message and exit
 
-# change log
-v2.2
-201801
-1. add configure file support
-2. add single-end data support
-3. remove the useless codes
-4. to be more user-friendly
+
+- To check if the sequence is circular, use script `useful_scripts/circle_check.py`.
+
+
+    $ python3 circle_check.py
+
+    Description
+
+        Checking whether the sequences are circular when the sequences have
+        length >= 12Kbp
+
+    Usage
+
+        python3 circle_check.py  <in.fasta>  <outPrefix> <mismatch_allowed>
+
+    output files:
+
+    1. <outPrefix>.mitogenome.fa
+    All the sequences from <in.fasta>.
+
+    The sequence id line will be like:
+    >C1 topology=circular
+    >C2 topology=linear
+
+    For the circular mt sequence, the overlapping region (the second `ATGCNN`
+    below) has been removed (below is an example)
+
+    ATGCNNNNN[ATGCNN]
+
+    Assuming `ATGCNNNNN` is a circular mt sequence, `ATGCNN` are the overlapping
+    regions.
+
+    2. <outPrefix>.start2end_for-circular-mt-only
+    This file contains the circular sequences only, and the first 300 bp of each
+    has been moved to the end of the sequence, just for better reads mapping. You
+    can check the sequencing depth around the 'joining site' (-300 bp) using the
+    `annotate` module of MitoZ, to confirm if the sequence is really circular.
+
+    3. <outPrefix>.overlap_information
+    The overlapping sequence detected for the circular sequences.
+
+    # change log
+    v2.2
+    201801
+    1. add configure file support
+    2. add single-end data support
+    3. remove the useless codes
+    4. to be more user-friendly
 
 
 # Citation

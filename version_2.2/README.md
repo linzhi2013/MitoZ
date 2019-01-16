@@ -257,7 +257,7 @@ or high abundances but not selected as outputs by MitoZ.
 These sequences, together with the sequences whose sequence ids have `_FivePCGs` suffixs in `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta` (if any), may be useful if, for example, you want to find
 potential NUMTs, or want to know if there some sequences of non-target-species.
 
-<br><br>
+<br>
 
 When you use other modules, some of those files (directories) may be absent.
 

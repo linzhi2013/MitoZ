@@ -53,5 +53,6 @@ ENV PATH=/app/anaconda/bin:$PATH
 
 VOLUME /project
 WORKDIR /project
+
 # ENTRYPOINT ["/app/anaconda/bin/python3 /app/release_MitoZ_v2.2/MitoZ.py"]
 CMD ["/bin/bash"]

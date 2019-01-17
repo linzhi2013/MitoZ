@@ -13,7 +13,7 @@ MitoZ is developed and tested under `Linux version 2.6.32-696.el6.x86_64 (mockbu
 
 ## 2.2 Harddisk space
 
-\>100G
+\>10 GB
 
 ## 2.3 Memory
 

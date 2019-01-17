@@ -17,6 +17,9 @@ See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions 
 
     $ singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ:v2.2
 
+For China users, it can be difficult to pull the Singularity container for known network problem, you can
+download the containers from https://pan.genomics.cn/ucdisk/s/uMFvum.
+
 ## 1.3 Run the MitoZ container
 
     $ /path/to/MitoZ.simg --help

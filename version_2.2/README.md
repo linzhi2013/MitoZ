@@ -130,6 +130,8 @@ Then modify the file `mitoz_all_config.txt` as the instructions in the file.
 
 `all` module requires only two input pair-end fastq files, and outputs a genbank file containing mitochondrial genome sequences and annotation information.
 
+Internally, `all` module runs `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualization` module sequentially, which really makes MitoZ be a "on-click" solution for mitogenome analysis from raw HTS data.
+
 ## 6.1 Input files
 
 Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `1.adapter.list.gz` and `2.adapter.list.gz`.
@@ -276,6 +278,8 @@ When you use other modules, some of those files (directories) may be absent.
 `all2` module supports single-end data and pair-end data.
 
 `all2` is amolst the same as `all`, except that `all2` doesn't filter the input fastq files.
+
+Internally, `all2` module runs `assemble`, `findmitoscaf`, `annotate` and `visualization` module sequentially.
 
 ## 7.1 Input files
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).

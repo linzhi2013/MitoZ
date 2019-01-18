@@ -244,22 +244,11 @@ visualization result files (`circos.png` and `circos.svg`).
 
 <br>
 
-*Below two points are not part of the final mitogenome results, but are output just in
+*Below is not part of the final mitogenome results, but are output just in
 case the users want to know more about those information instead of the mitogeome of
 target species*.
 
-8. `work71.mitogenome.fa` and `work71.most_related_species.txt`
-
-The mitogenome sequences from each kmer (e.g. kmer 71) assembly and their most closely
-related species. Sequences in `work71.mitogenome.fa` can be different from those in
-`ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta`, if the mitogenome sequence in
-`work71.mitogenome.fa` has overlapping regions between 5' and 3' ends. **In such a case,
-MitoZ will detect the overlapping region and trim it, assuming the sequence is
-circular**, resulting files `ZZZ_mitoscaf.fa.gbf` and `ZZZ.fasta`.
-
-<br>
-
-9. `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
+8. `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
 
 These `*.low_abundance*` and `*.high_abundance*` files, which are the sequences with low abundances
 or high abundances but not selected as outputs by MitoZ.

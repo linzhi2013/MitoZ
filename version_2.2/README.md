@@ -152,33 +152,32 @@ For more details, please refer to `python3 MitoZ.py all -h`
 
 ## 6.3 directory structure
 
-
     example
-    ├── tmp
-    │   ├── ZZZ.annotation
-    │   ├── ZZZ.assembly
-    │   └── ZZZ.cleandata
-    └── ZZZ.result
-        ├── work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked
-        ├── work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa
-        ├── work71.hmmtblout.besthit.sim.filtered.low_abundance
-        ├── work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta
-        ├── work71.mitogenome.fa
-        ├── work71.most_related_species.txt
-        ├── ZZZ_mitoscaf.fa.gbf
-        ├── ZZZ_mitoscaf.fa.sqn
-        ├── ZZZ_mitoscaf.fa.tbl
-        ├── ZZZ_mitoscaf.fa.val
-        ├── errorsummary.val
-        ├── ZZZ.most_related_species.txt
-        ├── ZZZ.fasta
-        ├── ZZZ.cds
-        ├── ZZZ.rrna
-        ├── ZZZ.trna
-        ├── circos.png
-        ├── circos.svg
-        ├── summary.txt
-        └── README.txt
+        ├── tmp
+        │   ├── ZZZ.annotation
+        │   ├── ZZZ.assembly
+        │   └── ZZZ.cleandata
+        └── ZZZ.result
+            ├── work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked
+            ├── work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa
+            ├── work71.hmmtblout.besthit.sim.filtered.low_abundance
+            ├── work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta
+            ├── work71.mitogenome.fa
+            ├── work71.most_related_species.txt
+            ├── ZZZ_mitoscaf.fa.gbf
+            ├── ZZZ_mitoscaf.fa.sqn
+            ├── ZZZ_mitoscaf.fa.tbl
+            ├── ZZZ_mitoscaf.fa.val
+            ├── errorsummary.val
+            ├── ZZZ.most_related_species.txt
+            ├── ZZZ.fasta
+            ├── ZZZ.cds
+            ├── ZZZ.rrna
+            ├── ZZZ.trna
+            ├── circos.png
+            ├── circos.svg
+            ├── summary.txt
+            └── README.txt
 
 The intermediate files are in the `tmp` directory, and `ZZZ.result` contains the result files
 for you sample.
@@ -222,6 +221,11 @@ The mitogenome files in different format. **The sequences whose sequence ids hav
 and they are output intendedly for further inspection by users**. All sequences with ≥ 5
 PCGs besides the mitochondrial sequences will be output by MitoZ intendedly.
 
+If you run the `assemble` or `findmitoscaf` modules, the `ZZZ.fasta` file will be `work71.mitogenome.fa`.
+We do not rename `work71.mitogenome.fa` to be `ZZZ.fasta` to aovid overwriting the `ZZZ.fasta` file if you run
+MitoZ in multi-kmer mode.
+
+
 <br>
 
 6. `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna`
@@ -244,11 +248,27 @@ visualization result files (`circos.png` and `circos.svg`).
 
 <br>
 
-*Below is not part of the final mitogenome results, but are output just in
-case the users want to know more about those information instead of the mitogeome of
-target species*.
+8. `work71.mitogenome.fa` and `work71.most_related_species.txt`
 
-8. `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
+The mitogenome sequences from each kmer (e.g. kmer 71) assembly and their most closely
+related species.
+
+* If you run `all` or `all2` module, you can ignore the two files, `work71.mitogenome.fa` is
+the same as `ZZZ.fasta` file, while `work71.most_related_species.txt` is the same as
+`ZZZ.most_related_species.txt`.
+
+* If you run `assemble` or `findmitoscaf` module, the two files are your mitogenome files.
+
+* If you run MitoZ in multi-kmer mode, if one kmer assembly has very good results, then you
+can just use these two files as your mitogenome files, instead of the file
+`outprefix.multiKmer_seq_picked.clean.fa` (describled in **section 13.1** as below)
+
+<br>
+
+*Below file are not part of the final mitogenome results, but are output just in case the
+users want to know more about those information instead of the mitogeome of target species*.
+
+9. `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked`, `work71.hmmtblout.besthit.sim.filtered.high_abundance_10.0X.reformat.sorted.Not-picked.fa`, `work71.hmmtblout.besthit.sim.filtered.low_abundance` and `work71.hmmtblout.besthit.sim.filtered.low_abundance.fasta`
 
 These `*.low_abundance*` and `*.high_abundance*` files, which are the sequences with low abundances
 or high abundances but not selected as outputs by MitoZ.
@@ -319,9 +339,12 @@ Pair-end(PE) fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), and optional files `
 
 # 9. `assemble` module
 
-`assemble` module supports single-end data and pair-end data
+`assemble` module supports single-end data and pair-end data.
 
 `assemble` is to assemble `clean.1.fq.gz` and `clean.2.fq.gz`, search for mitochondrial sequences from the assembly. Output is a mitochondrial sequence file in fasta format.
+
+Internally, `assemble` module will assemble the nuclear + mitochondrial genomes firstly with the input fastq
+files, then invoke `findmitoscaf` module to find out the mitogeome.
 
 ## 9.1 Input files
 Pair-end(PE) fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`).

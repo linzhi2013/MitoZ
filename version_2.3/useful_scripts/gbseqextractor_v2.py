@@ -33,6 +33,8 @@ def get_para():
 
 	Seqid will be the value of '/gene=' or '/product=', if they both were not
 	present, the gene will not be output!
+
+	v2: support for 'misc_feature'
 	"""
 
 	parser = argparse.ArgumentParser(description=description)
@@ -47,7 +49,7 @@ def get_para():
 		help="prefix of each seq id. default: None")
 
 	parser.add_argument("-types", nargs="+", default="CDS", 
-		choices=["CDS", "rRNA", "tRNA", "wholeseq"], 
+		choices=["CDS", "rRNA", "tRNA", "misc_feature", "wholeseq"], 
 		help="what kind of genes you want to extract? wholeseq for whole fasta seq.[%(default)s]")
 
 	parser.add_argument("-gi", default=False, action='store_true', 
@@ -108,6 +110,9 @@ def main():
 	if "tRNA" in args.types:
 		fh_trna = open(args.prefix+".trna", 'w')
 
+	if "misc_feature" in args.types:
+		fh_misc = open(args.prefix+".misc_feature", 'w')
+
 	if "wholeseq" in args.types:
 		fh_wholeseq = open(args.prefix + ".fasta", 'w')
 
@@ -151,7 +156,7 @@ def main():
 			print(wholeseq_idline, file=fh_wholeseq)
 			print(rec.seq, file=fh_wholeseq)
 
-		# CDS, tRNA, rRNA
+		# CDS, tRNA, rRNA, mis_feature
 		for fea in rec.features:
 			#print(fea.type)
 			#print(fea.location) have .start and .end attributes
@@ -160,6 +165,7 @@ def main():
 				if args.F:
 					if '>' in str(fea.location)  or '<' in str(fea.location):
 						continue
+
 
 				start = begin = fea.location.start
 				end = stop = fea.location.end
@@ -177,6 +183,12 @@ def main():
 				elif 'product' in fea.qualifiers:
 					product = fea.qualifiers['product'][0]
 					gene = product
+				elif fea.type == 'misc_feature':
+					if 'note' in fea.qualifiers and 'control region' in fea.qualifiers['note'][0]:
+						gene = product = fea.qualifiers['note'][0]
+						gene_seq = fea.location.extract(rec).seq
+					else:
+						continue
 				else:
 					print(ass_num, "Warning: NO gene or product tag! this gene is not output!\n")
 					continue
@@ -219,7 +231,9 @@ def main():
 					taxonomy = taxonomy.replace("'", "")
 					idline += ";"+ taxonomy
 
-				gene_seq = rec[start:end].seq
+				if fea.type != 'misc_feature':
+					gene_seq = rec[start:end].seq
+
 				if args.rv:
 					if strand == -1:
 						gene_seq = gene_seq.reverse_complement()
@@ -233,6 +247,9 @@ def main():
 				elif fea.type == "tRNA":
 					print(idline, file=fh_trna)
 					print(gene_seq, file=fh_trna)
+				elif fea.type == "misc_feature":
+					print(idline, file=fh_misc)
+					print(gene_seq, file=fh_misc)
 			#print(rec[start:end].seq) Biopython will automatically inorge '>' and '<'
 
 	if fh_cds:
@@ -247,6 +264,9 @@ def main():
 	if fh_wholeseq:
 		fh_wholeseq.close()
 
+	if fh_misc:
+		fh_misc.close()
+
 if __name__ == '__main__':
     main()
-		
+

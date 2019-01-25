@@ -67,7 +67,11 @@ Or, you can provide MitoZ the clean data, which have been filtered by other tool
 
 ## 4.4 Modules support both single-end data and pair-end data
 
+* `all`
+
 * `all2`
+
+* `filter`
 
 * `assemble`
 
@@ -77,10 +81,6 @@ Or, you can provide MitoZ the clean data, which have been filtered by other tool
 
 
 ## 4.5 Modules support pair-end data only
-
-* `all`
-
-* `filter`
 
 * `findmitoscaf`(needs fastq only when the input assembly (containing nuclear and mitochondrial sequences) is not from SOAPdenovo-Trans or mitoAssemble, to caculate the sequence sequencing depth)
 
@@ -130,7 +130,7 @@ Then modify the file `mitoz_all_config.txt` as the instructions in the file.
 
 # 6. `all` module
 
-`all` module supports pair-end data only.
+`all` module supports pair-end data and single-end data.
 
 `all` module requires only two input pair-end fastq files, and outputs a genbank file containing mitochondrial genome sequences and annotation information.
 
@@ -177,6 +177,7 @@ For more details, please refer to `python3 MitoZ.py all -h`
             ├── ZZZ.cds
             ├── ZZZ.rrna
             ├── ZZZ.trna
+            ├── ZZZ.misc_feature
             ├── circos.png
             ├── circos.svg
             ├── summary.txt
@@ -224,7 +225,7 @@ MitoZ in multi-kmer mode.
 
 <br>
 
-5. `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna`
+5. `ZZZ.cds`, `ZZZ.rrna`, `ZZZ.trna` and `ZZZ.misc_feature`
 
 The individual gene sequences in fasta format, extracted from `ZZZ_mitoscaf.fa.gbf`.
 
@@ -318,7 +319,7 @@ For single-end data:
 
 # 8. `filter` module
 
-`filter` module supports pair-end data only.
+`filter` module supports pair-end data and single-end data.
 
 `filter` is to filter input raw fastq files (`raw.1.fq.gz` and `raw.2.fq.gz`), outputs clean fastq files (`clean.1.fq.gz` and `clean.2.fq.gz`)
 
@@ -598,10 +599,10 @@ use the script `useful_scripts/circle_check.py`.
 
 ## 15.3 Extract gene sequences from Genbak file
 
-use the script `useful_scripts/gbseqextractor.py`.
+use the script `useful_scripts/gbseqextractor_v2.py`.
 
 
-	usage: gbseqextractor.py [-h] -f <STR> -prefix <STR> [-seqPrefix <STR>]
+	usage: gbseqextractor_v2.py [-h] -f <STR> -prefix <STR> [-seqPrefix <STR>]
 	                         [-types {CDS,rRNA,tRNA,wholeseq} [{CDS,rRNA,tRNA,wholeseq} ...]]
 	                         [-gi] [-p] [-t] [-s] [-l] [-rv] [-F]
 
@@ -630,27 +631,6 @@ use the script `useful_scripts/gbseqextractor.py`.
 	                        minus strand [False]
 	  -F                    only output full length genes [False]
 
-
-
-# change log
-
-
-v2.3
-
-20180123
-
-1. describe the most-closely-related species in the 'summary.txt' file
-2. describe the topology of each sequence in the 'summary.txt' file
-3. provide an example config file for each module in the program direcotry.
-
-v2.2
-
-201801
-
-1. add configure file support
-2. add single-end data support
-3. remove the useless codes
-4. to be more user-friendly
 
 
 # Citation

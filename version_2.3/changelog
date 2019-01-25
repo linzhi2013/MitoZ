@@ -4,6 +4,8 @@ v2.3
 1. describe the most-closely-related species in the 'summary.txt' file
 2. describe the topology of each sequence in the 'summary.txt' file
 3. provide an example config file for each module in the program direcotry.
+4, make `all` and `filter` support single-end data
+5. now can also annotate control region.
 
 v2.2
 20180114

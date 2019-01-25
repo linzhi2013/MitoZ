@@ -86,6 +86,9 @@ Or, you can provide MitoZ the clean data, which have been filtered by other tool
 
 * `visualize`
 
+**NB:  since single-end data lacks pairing information that is useful in the scaffolding step,
+it may not be able to generate mitochondrial genome assembly of quality as good as that
+generated using paired-end data.**
 
 ## 4.5 Modules support pair-end data only
 

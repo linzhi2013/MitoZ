@@ -19,6 +19,13 @@ MitoZ is developed and tested under `Linux version 2.6.32-696.el6.x86_64 (mockbu
 
 It takes ~100G when we tested MitoZ with `--thread_number 16`. This is because MitoZ uses the *de Bruijn* graph (DBG) algorithm to perform *de novo* assembly. To learn more, see https://doi.org/10.1093/bioinformatics/btu077.
 
+there are ways to reduce the memory usage:
+1. enrich the mitochondrion during experiment step (e.g. via gene capture array).
+  This can lead to a higher mitochondrial derived reads ratio in the HTS data, and then you can use less data for MitoZ input,
+which can reduce memory usage of MitoZ.
+
+2. filter out the mitochondrial reads by mapping reads against mitogenomes of closely-related species (if any).
+  provide such reads (a smaller volume of data) to MitoZ.
 
 # 3. Get started
 

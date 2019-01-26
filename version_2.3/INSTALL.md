@@ -56,7 +56,15 @@ Please refer to https://docs.docker.com/.
 
 ## 2.3 Run the container
 
-In your working directory (the fastq files should be in there),
+In your working directory (i.e. `$PWD`) (the fastq files should be in there),
+shell into the container:
+
+    $ sudo docker run -v $PWD:/project --rm guanliangmeng/mitoz:2.3 /app/release_MitoZ_v2.3/MitoZ.py
+
+
+## 2.4 You can also `shell` into  the container
+
+In your working directory (i.e. `$PWD`) (the fastq files should be in there),
 shell into the container:
 
     $ sudo docker run -v $PWD:/project --rm -it guanliangmeng/mitoz:2.3

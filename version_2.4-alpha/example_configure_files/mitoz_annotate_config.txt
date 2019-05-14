@@ -1,0 +1,48 @@
+# 1. lines startswith '#' char will be ignored.
+# 2. do not add comments at the end of the parameter lines.
+# 3. the space around '=' will be ignored.
+
+[module-annotate-BEGIN] # do not touch this
+#################################################################################
+#####------------------------- annotate module -----------------------------#####
+# Important: 'annotate' module support single-end and pair-end data
+
+###################
+# optional arguments
+
+# which genetic code table to use? 'auto' means
+# determined by '--clade' option.
+genetic_code = auto
+
+# which clade does your species belong to
+# choose from "Chordata", "Arthropoda"
+clade = Arthropoda
+
+# you can set `fastq1` only (and leave `fastq2` as default)
+# if you use single-end data
+
+# fastq 1 file, if you want to draw depth
+fastq1 =
+
+# fastq 2 file, if you want to draw depth
+fastq2 =
+
+# choose from ["linear", "circular"]
+# the sequences are circular? (seq length must be >= 12Kbp)
+topology = linear
+
+###################
+# Common arguments
+
+# output prefix
+outprefix = ZZZ
+
+# thread number
+thread_number = 8
+
+###################
+# Input fasta file. required.
+fastafile =
+
+[module-annotate-END] # do not touch this
+

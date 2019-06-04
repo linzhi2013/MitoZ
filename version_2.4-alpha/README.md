@@ -94,7 +94,9 @@ Or, you can provide MitoZ the clean data, which have been filtered by other tool
 
 ## 4.6 Fasta file
 
-When you annotate a mitogenome sequence(s) stored in fasta file, the sequence id can not be too long, or MitoZ will fail. This is for some limitation in BioPython that MitoZ invokes.
+When you annotate a mitogenome sequence(s) stored in fasta file, the sequence id can not be too long (≤16 characters), or MitoZ will fail. This is for some limitation in BioPython that MitoZ invokes. see more details on https://github.com/biopython/biopython/issues/526.
+
+
 
 
 ## 4.7 Genetic code
@@ -442,6 +444,10 @@ If you want to see the abundance along the mitogenome sequences, you will also n
 `visualize` module supports single-end and pair-end data.
 
 `visualize` module is to visualize the genbank file.
+
+
+There are three circles in the result figure, where the innermost one shows the GC content, which is calculated based on a window-sliding method. For the middle circle, that reveals the depth distribution, with dark green for the outline. If the depth lower than the minimum value (default 20), it turns red, whereas if the depth larger than upper quartile, it turns dark green as same with the outline. And for the outermost circle, it obviously shows the gene features, orange for rRNA, red for tRNA, and blue for CDS. By the way, the feature color can be defined by users. Users can also add a customed image (i.e. a aniaml picture) as background (see the print help information of `visualize` module).
+
 
 ## 12.1 Input files
 e.g. `mitogenome.gb`

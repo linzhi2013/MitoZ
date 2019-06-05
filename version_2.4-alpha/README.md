@@ -97,6 +97,8 @@ Or, you can provide MitoZ the clean data, which have been filtered by other tool
 When you annotate a mitogenome sequence(s) stored in fasta file, the sequence id can not be too long (≤16 characters), or MitoZ will fail. This is for some limitation in BioPython that MitoZ invokes. see more details on https://github.com/biopython/biopython/issues/526.
 
 
+Make sure you sequence ID contains "topology=circular" or "topology=linear". MitoZ uses this tag to determine if a sequence is circular.
+
 
 
 ## 4.7 Genetic code
@@ -424,6 +426,8 @@ Or,
 `annotate` module supports single-end and pair-end data.
 
 `annotate` is to annotate the input mitogenome sequence, including protein coding genes (PCGs), tRNA genes and rRNA genes. Output is a genbank file containing mitochondrial genome sequences and annotation information.
+
+Make sure you sequence ID contains "topology=circular" or "topology=linear". MitoZ uses this tag to determine if a sequence is circular.
 
 ## 11.1 Input files
 e.g. `mitogenome.fa`

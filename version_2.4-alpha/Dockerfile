@@ -30,12 +30,9 @@ ENV PATH="/app/anaconda/bin:$PATH"
 
 
 # install dependency for MitoZ
-# conda config --add channels bioconda \
-# conda config --add channels conda-forge
-
 RUN conda config --add channels defaults
-RUN    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
-RUN    conda config --add channels http://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+RUN conda config --add channels bioconda
+RUN conda config --add channels conda-forge
 
 RUN conda install -y libgd=2.2.4 python=3.6.0 biopython=1.69 ete3=3.0.0b35  perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl blast=2.2.31  hmmer=3.1b2  bwa=0.7.12 samtools=1.3.1 infernal=1.1.1 tbl2asn openjdk ; \
     conda clean -y -a

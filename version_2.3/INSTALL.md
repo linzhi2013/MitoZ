@@ -139,12 +139,12 @@ In the terminal, type `python3` then `Enter`, you will be into the Python intera
 For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
 
 
-## 3.6 Download the MitoZ package
+## 3.6 Download the MitoZ package by yourself
 
-Download from `https://github.com/linzhi2013/MitoZ/tree/master/version_2.2`.
+Download the MitoZ source code from `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3`. You can put it to anywhere.
 
-    $ tar -jxvf release_MitoZ_v2.2.tar.bz2
-    $ cd release_MitoZ_v2.2
+    $ tar -jxvf release_MitoZ_v2.3.tar.bz2
+    $ cd release_MitoZ_v2.3
     $ python3 MitoZ.py
 
 ## 3.7 Important: make sure you are in the `mitozEnv` environment when you run MitoZ!

@@ -163,9 +163,9 @@ Then try following:
 For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
 
 
-## 3.6 Download the MitoZ package
+## 3.6 Download the MitoZ source codes
 
-Download from `https://github.com/linzhi2013/MitoZ/tree/master/version_2.4-alpha`.
+Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.4-alpha` and download the file `release_MitoZ_v2.4-alpha.tar.bz2`. You can put it to anywhere.
 
     $ tar -jxvf release_MitoZ_v2.4-alpha.tar.bz2
     $ cd release_MitoZ_v2.4-alpha

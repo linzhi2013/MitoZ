@@ -116,6 +116,25 @@ Or,
 
 but I cannot ensure using mirror channels will always work. Good luck!
 
+If the custom mirror channels do not work, you may need to remove them firstly:
+
+    # show all your channels
+    $ conda config --show channels
+
+    # remove the the mirror channles
+    $ conda config --remove  channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+    $ conda config --remove  channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+    
+    # If you have other mirrors, please also remove them.
+    
+Make sure now you have only these three channels:
+
+    $ conda config --show channels
+    channels:
+      - conda-forge
+      - bioconda
+      - defaults
+     
 ### 3.3.2 Set up an isolated enviroment for MitoZ
 
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.

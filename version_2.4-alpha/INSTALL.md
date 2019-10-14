@@ -16,6 +16,10 @@ We provide three options to use MitoZ:
 ## 1.1 Install Singularity
 See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions to install Singularity.
 
+Note: according to the offical documention (Oct. 2019), the Singularity must be installed with root privilege.
+
+And the Singularity installed via conda (e.g. `conda install -c bioconda singularity`) may not work (at least when installing as normal users)!
+
 ## 1.2 Download the MitoZ container
 
     $ singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ:v2.4-alpha

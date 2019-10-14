@@ -136,7 +136,12 @@ Make sure now you have only these three channels:
       - conda-forge
       - bioconda
       - defaults
-     
+    # or 
+    channels:
+      - conda-forge/label/cf201901
+      - bioconda/label/cf201901
+      - defaults
+    
 ### 3.3.2 Set up an isolated enviroment for MitoZ
 
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.

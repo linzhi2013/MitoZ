@@ -95,6 +95,12 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
     $ conda config --add channels bioconda
     $ conda config --add channels conda-forge
 
+If the above channels do not work (e.g. due to conda repo problem), try:
+
+    $ conda config --add channels defaults
+    $ conda config --add channels bioconda/label/cf201901
+    $ conda config --add channels conda-forge/label/cf201901
+    
 ### tips
 The download speeds from the above channels can be very slow, if this is the case to you,
 you can set up other mirror channels, but make sure the `conda-forge` channel has the highest

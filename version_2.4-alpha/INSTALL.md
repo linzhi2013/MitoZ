@@ -120,6 +120,7 @@ If the custom mirror channels do not work, you may need to remove them firstly:
     # If you have other mirrors, please also remove them.
     
 Make sure now you have only these three channels:
+
     $ conda config --show channels
     channels:
       - conda-forge

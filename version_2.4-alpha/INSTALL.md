@@ -147,6 +147,7 @@ Make sure now you have only these three channels:
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.
 
     $ conda create  -n mitozEnv libgd=2.2.4 python=3.6.0 biopython=1.69 ete3=3.0.0b35 perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl blast=2.2.31  hmmer=3.1b2  bwa=0.7.12 samtools=1.3.1 infernal=1.1.1 tbl2asn openjdk
+    $ conda update -c bioconda tbl2asn ete3
 
 ## 3.4 Activate the `mitozEnv` environment
 
@@ -186,4 +187,11 @@ Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.4-alpha` and do
 If you write the run commands into a script file (e.g. `work.sh`), you should also add `source activate mitozEnv` into the
 script file ahead of the MitoZ commands.
 
+
+# 4. Run a test
+
+It is wise to check everything is fine before you run your own samples.
+Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
 ********************************************************************
+
+

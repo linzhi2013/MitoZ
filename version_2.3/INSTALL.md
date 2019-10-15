@@ -178,4 +178,7 @@ Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download
 If you write the run commands into a script file (e.g. `work.sh`), you should also add `source activate mitozEnv` into the
 script file ahead of the MitoZ commands.
 
+# 4. Run a test
+It is wise to check everything is fine before you run your own samples. Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
+
 ********************************************************************

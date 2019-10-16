@@ -642,6 +642,28 @@ use the script `useful_scripts/gbseqextractor_v2.py`.
 	  -F                    only output full length genes [False]
 
 
+# 16. How good is my result?
+
+There are several aspects you should consider:
+
+1. The sequencing depth along the mitochondrial sequence(s)
+
+Check the `circos.png` or `circos.svg` files
+
+2. Internal stop codons within PCGs
+
+3. Circularity of your mitochondrial sequence
+
+Check the `summary.txt`
+
+4. Is there any gene missing?
+
+Sometimes, even when the result mitogenome is complete ('circular'), due to the limitation of annotation progrom, e.g., MiTFi for tRNA, some tRNA genes can still be missing.
+
+5. Can my result sequences be contaminations or NUMTs?
+
+Blast your result sequences again NCBI NT database.
+
 
 # Citation
 

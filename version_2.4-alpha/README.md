@@ -25,7 +25,7 @@ there are ways to reduce the memory usage:
 which can reduce memory usage of MitoZ.
 
 2. filter out the mitochondrial reads by mapping reads against mitogenomes of closely-related species (if any).
-  provide such reads (a smaller volume of data) to MitoZ.
+  provide such reads (a smaller volume of data) to MitoZ. For example, You can use BWA (https://github.com/lh3/bwa) to align your fastq reads again some mitogenomes of closely related species (with relaxed parameters) and then extract only the mapped reads (output in fastq format) with samtools (https://github.com/samtools/). Finally, use the result fastq reads for mitogenome assembly.
 
 # 3. Get started
 

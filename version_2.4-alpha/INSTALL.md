@@ -13,6 +13,8 @@ We provide three options to use MitoZ:
 
 # 1 Singularity container
 
+**Currently, the Singularity image for MitoZ v2.4-alpha was not built successfully. therefore, please use the Docker verion or installing from source by yourseff.**
+
 ## 1.1 Install Singularity
 See [https://www.sylabs.io/docs/](https://www.sylabs.io/docs/) for instructions to install Singularity.
 

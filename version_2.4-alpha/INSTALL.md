@@ -22,6 +22,7 @@ And the Singularity installed via conda (e.g. `conda install -c bioconda singula
 
 ### Tips for installing Singularity via conda
 *tested only for singularity-3.0.1*
+*You can go to https://anaconda.org/conda-forge/singularity/labels to check if there is still version 3.0.1 avaiable and on which channel*
 
 Firstly, run the command as a normal user,
 

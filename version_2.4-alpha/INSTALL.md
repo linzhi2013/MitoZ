@@ -20,6 +20,21 @@ Note: according to the offical documention (Oct. 2019), the Singularity must be 
 
 And the Singularity installed via conda (e.g. `conda install -c bioconda singularity`) may not work (at least when installing as normal users)!
 
+### Tips for installing Singularity via conda
+Firstly, run the command as a normal user,
+
+    $ conda create -n singularity -c conda-forge singularity
+
+Next, change the file permission,
+
+    $ find /export/personal/menggl/soft/miniconda3/envs/singularity/libexec/singularity -type f -name '*-suid'
+    $ chown root:root  ${the_suid_file}
+    $ chmod u+s ${the_suid_file}
+
+Otherwise, Singuarilty won't work properly.
+
+Of course, you can install the whole singularity things as a root user, which is the best way.
+
 ## 1.2 Download the MitoZ container
 
     $ singularity pull  --name MitoZ.simg shub://linzhi2013/MitoZ:v2.4-alpha

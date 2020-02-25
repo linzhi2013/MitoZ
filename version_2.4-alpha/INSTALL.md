@@ -21,9 +21,11 @@ Note: according to the offical documention (Oct. 2019), the Singularity must be 
 And the Singularity installed via conda (e.g. `conda install -c bioconda singularity`) may not work (at least when installing as normal users)!
 
 ### Tips for installing Singularity via conda
+*tested only for singularity-3.0.1*
+
 Firstly, run the command as a normal user,
 
-    $ conda create -n singularity -c conda-forge singularity
+    $ conda create -n singularity -c conda-forge/label/gcc7 singularity  
 
 Next, change the file permission,
 

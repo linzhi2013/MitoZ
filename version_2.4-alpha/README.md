@@ -27,6 +27,7 @@ which can reduce memory usage of MitoZ.
 2. filter out the mitochondrial reads by mapping reads against mitogenomes of closely-related species (if any).
   provide such reads (a smaller volume of data) to MitoZ. For example, You can use BWA (https://github.com/lh3/bwa) to align your fastq reads again some mitogenomes of closely related species (with relaxed parameters) and then extract only the mapped reads (output in fastq format) with samtools (https://github.com/samtools/). Finally, use the result fastq reads for mitogenome assembly.
 
+
 # 3. Get started
 
 MitoZ includes multiple modules, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.
@@ -63,6 +64,12 @@ The length of read1 and read2 must be equal. You should trim your data (e.g. use
 
 The insert size of pair-end library should be small insert size (<1000 bp). I do not recommend to use data of large insert size (>1000bp, mate-pair library), because this kind of data usually is not good as small insert size data.
 
+
+**What about too much data?**
+
+>I tried running one file as a single read with 120G and this was succsessful giving me a mitogenome ~16,000bp.
+
+see https://github.com/linzhi2013/MitoZ/issues/54#issuecomment-597507526.
 
 ## 4.3 Data pretreatment
 
@@ -427,7 +434,8 @@ Or,
 
 `annotate` is to annotate the input mitogenome sequence, including protein coding genes (PCGs), tRNA genes and rRNA genes. Output is a genbank file containing mitochondrial genome sequences and annotation information.
 
-Make sure you sequence ID contains "topology=circular" or "topology=linear". MitoZ uses this tag to determine if a sequence is circular.
+Make sure you sequence ID contains "topology=circular" or "topology=linear". MitoZ uses this tag to determine if a sequence is circular. **Beware about the sequence ID format. This `>Contig1 topology=circular` will work, but this `>Contig1;topology=circular` won't.** See https://github.com/linzhi2013/MitoZ/issues/58#issuecomment-598245190.
+
 
 ## 11.1 Input files
 e.g. `mitogenome.fa`

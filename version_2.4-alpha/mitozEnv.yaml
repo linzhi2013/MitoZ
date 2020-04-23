@@ -1,4 +1,4 @@
-name: mitoz
+name: mitozEnv
 channels:
   - etetoolkit
   - conda-forge

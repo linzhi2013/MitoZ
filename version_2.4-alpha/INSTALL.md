@@ -109,6 +109,14 @@ developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
 ## 3.3 Install dependency with `conda` command
 
+Thanks to @mptrsen (see https://github.com/linzhi2013/MitoZ/issues/47#issuecomment-581938066), the quickest way to create a `mitozEnv` environment is:
+    
+    # find the mitozEnv.yaml file after you download the source codes, see section 3.6 below
+    $ conda env create -n mitozEnv -f mitozEnv.yaml
+
+If this method works, you can jump to **section 3.4** directly.
+
+
 ### 3.3.1 Set up channels
 
     $ conda config --add channels defaults

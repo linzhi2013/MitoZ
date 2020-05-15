@@ -189,7 +189,7 @@ firstly, then run the above `create` and `update` commands again.
 
 ## 3.5 Install NCBI taxonomy database for ete3 package
 1. Network connection required.
-2. `HOME` directory must have more than 500M space available. If not, please refer to `https://github.com/linzhi2013/taxonomy_ranks/blob/master/README.md`
+2. `HOME` directory must have more than 500M space available. If not, please refer to https://github.com/linzhi2013/taxonomy_ranks/blob/master/README.md
 
 In the terminal, type `python3` then `Enter`, you will be into the Python interactive interface. Now run the following commands line-by-line in the Python interactive interface.
 

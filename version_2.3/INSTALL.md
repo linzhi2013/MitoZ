@@ -186,7 +186,7 @@ It is wise to check everything is fine before you run your own samples. Here is 
 
 ## 3.6 Download the MitoZ source codes
 
-Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download the file `release_MitoZ_v2.3.tar.bz2`. You can put it to anywhere.
+Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download the file `release_MitoZ_v2.3.tar.bz2` (https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_2.3/release_MitoZ_v2.3.tar.bz2). You can put it to anywhere.
 
     $ tar -jxvf release_MitoZ_v2.3.tar.bz2
     $ cd release_MitoZ_v2.3

@@ -209,6 +209,9 @@ Then try following:
 For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
 
 
+**Notice**
+If you have difficulties in downloading the database from NCBI, please forward to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301.
+
 ## 3.6 Download the MitoZ source codes
 
 Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.4-alpha` and download the file `release_MitoZ_v2.4-alpha.tar.bz2` (https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_2.4-alpha/release_MitoZ_v2.4-alpha.tar.bz2). You can put it to anywhere.

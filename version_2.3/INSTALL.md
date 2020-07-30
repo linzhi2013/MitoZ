@@ -180,6 +180,10 @@ In the terminal, type `python3` then `Enter`, you will be into the Python intera
 
 For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
 
+**Notice**
+If you have difficulties in downloading the database from NCBI, please forward to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301.
+
+
 # Run a test
 It is wise to check everything is fine before you run your own samples. Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
 

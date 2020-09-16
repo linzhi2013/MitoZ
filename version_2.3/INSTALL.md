@@ -68,10 +68,14 @@ shell into the container:
 
 ## 2.4 You can also `shell` into  the container
 
-In your working directory (i.e. `$PWD`) (the fastq files should be in there),
+In your **host** working directory (i.e. `$PWD`) (**the fastq files should be in there**),
 shell into the container:
 
     $ sudo docker run -v $PWD:/project --rm -it guanliangmeng/mitoz:2.3
+
+The `-v $PWD:/project` here means mounting your current host directory into `/project` of the Docker container. Multiple `-v` options can be used at the same time.
+
+Say, if we do `-v /opt/project1/data:/project`, we can see the files of the host's `/opt/project1/data` directory from the container, but we won't be able to access any other files (or soft-links or maybe hard-links) outside the `data` directory.
 
 In the container,
 

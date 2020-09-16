@@ -90,6 +90,14 @@ To learn more about the Docker usage, please go to https://docs.docker.com/.
 
 # 3. Install from source code
 
+**Warning: this way of installation can be depressing and time-wasting**
+
+**If you run into troubles with MitoZ installed with from source code, which probably because of a broken `mitozEnv` environment.**
+
+**Strongly recommend to use the Docker version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  softwares installation.** See https://github.com/linzhi2013/MitoZ/issues/84 and https://github.com/linzhi2013/MitoZ/issues/80#issuecomment-690376705 as examples.
+
+
+
 ## 3.1 System requirment: Linux
 
 developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
@@ -190,6 +198,7 @@ If you have difficulties in downloading the database from NCBI, please forward t
 
 # Run a test
 It is wise to check everything is fine before you run your own samples. Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
+
 
 
 ## 3.6 Download the MitoZ source codes

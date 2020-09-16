@@ -195,10 +195,7 @@ For more details, please refer to http://etetoolkit.org/docs/latest/tutorial/tut
 **Notice**
 If you have difficulties in downloading the database from NCBI, please forward to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301.
 
-
-# Run a test
-It is wise to check everything is fine before you run your own samples. Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
-
+**Recently, the NCBI taxonomy database (Sep 2020) seems to have some problems (e.g. `sqlite3.IntegrityError: UNIQUE constraint failed: synonym.spname, synonym.taxid`)**, see https://github.com/linzhi2013/MitoZ/issues/81#issue-699246501 and https://github.com/linzhi2013/MitoZ/issues/79#issuecomment-689582348. If this happens to you, you should refer to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301 first.
 
 
 ## 3.6 Download the MitoZ source codes

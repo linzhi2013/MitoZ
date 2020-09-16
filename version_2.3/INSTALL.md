@@ -90,11 +90,11 @@ To learn more about the Docker usage, please go to https://docs.docker.com/.
 
 # 3. Install from source code
 
-**Warning: this way of installation can be depressing and time-wasting**
+**Warning: this way of installation can be depressing and time-wasting.**
 
-**If you run into troubles with MitoZ installed with from source code, which probably because of a broken `mitozEnv` environment.**
+**If you run into troubles with MitoZ installed from source code, it is probably because of a broken `mitozEnv` environment.** ** See https://github.com/linzhi2013/MitoZ/issues/84 and https://github.com/linzhi2013/MitoZ/issues/80#issuecomment-690376705 as examples.
 
-**Strongly recommend to use the Docker version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  softwares installation.** See https://github.com/linzhi2013/MitoZ/issues/84 and https://github.com/linzhi2013/MitoZ/issues/80#issuecomment-690376705 as examples.
+**Strongly recommend to use the Docker version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  softwares installation.
 
 
 

@@ -98,6 +98,15 @@ To learn more about the Docker usage, please go to https://docs.docker.com/.
 
 # 3. Install from source code
 
+
+**Warning: this way of installation can be depressing and time-wasting.**
+
+**If you run into troubles with MitoZ installed from source code, it is probably because of a broken `mitozEnv` environment.** See https://github.com/linzhi2013/MitoZ/issues/84 and https://github.com/linzhi2013/MitoZ/issues/80#issuecomment-690376705 as examples. **If similar things happen to you, you'd better re-run the analysis with the Docker version BEFORE raise a new issue.**
+
+**Strongly recommend to use the Docker version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  software installation.**
+
+
+
 ## 3.1 System requirment: Linux
 
 developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64

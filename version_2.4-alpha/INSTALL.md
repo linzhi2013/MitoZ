@@ -172,6 +172,8 @@ Make sure now you have only these three channels:
     
 ### 3.3.2 Set up an isolated enviroment for MitoZ
 
+**The versions MATTER!!! Please just copy the command below to create your mitozEnv environment, other versions may not work.**
+
 It is a good idea to install MitoZ into an isolated enviroment, e.g., `mitozEnv`.
 
     $ conda create  -n mitozEnv libgd=2.2.4 python=3.6.0 biopython=1.69 ete3=3.0.0b35 perl-list-moreutils perl-params-validate perl-clone circos=0.69 perl-bioperl blast=2.2.31  hmmer=3.1b2  bwa=0.7.12 samtools=1.3.1 infernal=1.1.1 tbl2asn openjdk

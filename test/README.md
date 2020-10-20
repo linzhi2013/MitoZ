@@ -64,10 +64,10 @@ Otherwise, you may add the `sudo` command before `docker`, i.e.:
 
 when use singularity verion, the command would be:
 
-    fq1=/export/personal/menggl/my_test/MitoZ_intro/sing/test.1.fq.gz
-    fq2=/export/personal/menggl/my_test/MitoZ_intro/sing/test.2.fq.gz
-    outprefix=test
-    singularity exec -B /export /export/personal/menggl/soft/linux/MitoZ.simg \
+    $ fq1=/export/personal/menggl/my_test/MitoZ_intro/sing/test.1.fq.gz
+    $ fq2=/export/personal/menggl/my_test/MitoZ_intro/sing/test.2.fq.gz
+    $ outprefix=test
+    $ singularity exec -B /export /export/personal/menggl/soft/linux/MitoZ.simg \
     /app/anaconda/bin/python3 /app/release_MitoZ_v2.3/MitoZ.py all2 \
     --genetic_code 5 \
     --clade Arthropoda \

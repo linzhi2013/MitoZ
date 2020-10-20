@@ -63,7 +63,7 @@ Please refer to https://docs.docker.com/.
 In your working directory (i.e. `$PWD`) (the fastq files should be in there),
 shell into the container:
 
-    $ sudo docker run -v $PWD:/project --rm guanliangmeng/mitoz:2.3 /app/release_MitoZ_v2.3/MitoZ.py
+    $ sudo docker run -v $PWD:$PWD -w $PWD --rm guanliangmeng/mitoz:2.3 /app/release_MitoZ_v2.3/MitoZ.py
 
 
 ## 2.4 You can also `shell` into  the container
@@ -71,7 +71,7 @@ shell into the container:
 In your **host** working directory (i.e. `$PWD`) (**the fastq files should be in there**),
 shell into the container:
 
-    $ sudo docker run -v $PWD:/project --rm -it guanliangmeng/mitoz:2.3
+    $ sudo docker run -v $PWD:$PWD -w $PWD --rm -it guanliangmeng/mitoz:2.3
 
 The `-v $PWD:/project` here means mounting your current host directory into `/project` of the Docker container. Multiple `-v` options can be used at the same time.
 
@@ -88,26 +88,69 @@ some useful scripts are in `/app/release_MitoZ_v2.3/useful_scripts`
 
 To learn more about the Docker usage, please go to https://docs.docker.com/.
 
-# 3. Install from source code
+
+# 3. Udocker container
+
+**Before you decide install MitoZ from source code, you should try Udocker first!!**
+
+**Unlike, Singuarlity and Docker, you don't need root/sudo previlege to install or/and run Udocker!!**
+
+## 3.1 Install Udocker
+
+    $ mkdir /my_soft/udocker/
+    $ cd /my_soft/udocker/
+    $ curl https://raw.githubusercontent.com/indigo-dc/udocker/master/udocker.py > udocker
+    $ chmod u+rx ./udocker
+    $ ./udocker install
+
+You can add the `udocker` command to your `PATH` envrionmental variable:
+
+    $ echo 'export PATH="/my_soft/udocker/:$PATH"' >>~/.bashrc
+    $ source ~/.bashrc
+
+Keep in mind that Udocker install dependencies (and images) into your `~/.udocker/` direcotry. If your `HOME` directory has limited space,
+you can move this directory to other place, then use `ln -s` command to link it back to your `HOME` directory.
+
+Go to https://github.com/indigo-dc/udocker for more details.
+
+## 3.2 Download the MitoZ container
+
+    $ udocker pull guanliangmeng/mitoz:2.3
+    $ udocker images
+      REPOSITORY
+      guanliangmeng/mitoz:2.3 
+
+## 3.3 Run the container
+
+In your working directory (i.e. `$PWD`) (the fastq files should be in there),
+shell into the container:
+
+    $ udocker run --volume=$PWD --workdir=$PWD  --rm guanliangmeng/mitoz:2.3 /app/release_MitoZ_v2.3/MitoZ.py
+
+
+There is an example on https://github.com/linzhi2013/MitoZ/tree/master/test
+
+
+# 4. Install from source code
 
 **Warning: this way of installation can be depressing and time-wasting.**
 
 **If you run into troubles with MitoZ installed from source code, it is probably because of a broken `mitozEnv` environment.** See https://github.com/linzhi2013/MitoZ/issues/84 and https://github.com/linzhi2013/MitoZ/issues/80#issuecomment-690376705 as examples. **If similar things happen to you, you'd better re-run the analysis with the Docker version BEFORE raise a new issue.**
 
-**Strongly recommend to use the Docker version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  software installation.**
+**Strongly recommend to use the Docker/Udocker/Singularity version instead!! You're a researcher focusing on biological questions, and surely you don't want to waste your time on  software installation.**
 
 
 
-## 3.1 System requirment: Linux
+## 4.1 System requirment: Linux
 
 developed under: CentOS release 6.9 (Final), 2.6.32-696.30.1.el6.x86_64
 
-## 3.2 Install Anaconda or Miniconda
+## 4.2 Install Anaconda or Miniconda
 1. Anaconda: https://anaconda.org/anaconda/python
 2. Miniconda: https://conda.io/miniconda.html (recommended)
 
 
-## 3.3 Install dependency with `conda` command
+## 4.3 Install dependency with `conda` command
 
 Thanks to @mptrsen (see https://github.com/linzhi2013/MitoZ/issues/47#issuecomment-581938066), the quickest way to create a `mitozEnv` environment is:
     
@@ -116,7 +159,7 @@ Thanks to @mptrsen (see https://github.com/linzhi2013/MitoZ/issues/47#issuecomme
 
 If this method works, you can jump to **section 3.4** directly.
 
-### 3.3.1 Set up channels
+### 4.3.1 Set up channels
 
     $ conda config --add channels defaults
     $ conda config --add channels bioconda
@@ -163,7 +206,7 @@ Make sure now you have only these three channels:
       - bioconda/label/cf201901
       - defaults
      
-### 3.3.2 Set up an isolated enviroment for MitoZ
+### 4.3.2 Set up an isolated enviroment for MitoZ
 
 **The versions MATTER!!! Please just copy the command below to create your mitozEnv environment, other versions may not work.**
 
@@ -183,7 +226,7 @@ firstly, then run the above create and update commands again.
 
     $ source activate mitozEnv
 
-## 3.5 Install NCBI taxonomy database for ete3 package
+## 4.5 Install NCBI taxonomy database for ete3 package
 1. Network connection required.
 2. `HOME` directory must have more than 500M space available. If not, please refer to `https://github.com/linzhi2013/taxonomy_ranks/blob/master/README.md`
 
@@ -201,7 +244,7 @@ If you have difficulties in downloading the database from NCBI, please forward t
 **Recently, the NCBI taxonomy database (Sep 2020) seems to have some problems (e.g. `sqlite3.IntegrityError: UNIQUE constraint failed: synonym.spname, synonym.taxid`)**, see https://github.com/linzhi2013/MitoZ/issues/81#issue-699246501 and https://github.com/linzhi2013/MitoZ/issues/79#issuecomment-689582348. If this happens to you, you should refer to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301 first.
 
 
-## 3.6 Download the MitoZ source codes
+## 4.6 Download the MitoZ source codes
 
 Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download the file `release_MitoZ_v2.3.tar.bz2` (https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_2.3/release_MitoZ_v2.3.tar.bz2). You can put it to anywhere.
 
@@ -209,7 +252,7 @@ Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download
     $ cd release_MitoZ_v2.3
     $ python3 MitoZ.py
 
-## 3.7 Important: make sure you are in the `mitozEnv` environment when you run MitoZ!
+## 4.7 Important: make sure you are in the `mitozEnv` environment when you run MitoZ!
 If you write the run commands into a script file (e.g. `work.sh`), you should also add `source activate mitozEnv` into the
 script file ahead of the MitoZ commands.
 
@@ -222,7 +265,7 @@ Then you can run this script in your terminal as:
 
     $ sh work.sh
 
-# 4. Run a test
+# 5. Run a test
 It is wise to check everything is fine before you run your own samples. Here is a small example https://github.com/linzhi2013/MitoZ/tree/master/test, it only takes 4 CPUs, about 2 G memory and 15 minutes to get finished.
 
 ********************************************************************

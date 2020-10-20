@@ -60,6 +60,7 @@ Otherwise, you may add the `sudo` command before `docker`, i.e.:
     --fastq_read_length 125 \
     1>m.log 2>m.err
 
+## Singularity
 
 when use singularity verion, the command would be:
 

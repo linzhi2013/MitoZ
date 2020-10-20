@@ -4,12 +4,14 @@ The dataset has been tested with the Docker image `guanliangmeng/mitoz:2.3`.
 
 # How to run
 
+## Docker
 If you are in the Docker group, run:
 
-    fq1=test.1.fq.gz
-    fq2=test.2.fq.gz
-    outprefix=test
-    docker run -v $PWD:/project  --rm guanliangmeng/mitoz:2.3 \
+    $ # make sure your fq1 and fq2 files are in $PWD directory!
+    $ fq1=test.1.fq.gz
+    $ fq2=test.2.fq.gz
+    $ outprefix=test
+    $ docker run -v $PWD:$PWD -w $PWD  --rm guanliangmeng/mitoz:2.3 \
     python3 /app/release_MitoZ_v2.3/MitoZ.py all2 \
     --genetic_code 5 \
     --clade Arthropoda \
@@ -24,11 +26,11 @@ If you are in the Docker group, run:
 
 Otherwise, you may add the `sudo` command before `docker`, i.e.:
 
-
-    fq1=test.1.fq.gz
-    fq2=test.2.fq.gz
-    outprefix=test
-    sudo docker run -v $PWD:/project  --rm guanliangmeng/mitoz:2.3 \
+    $ # make sure your fq1 and fq2 files are in $PWD directory!
+    $ fq1=test.1.fq.gz
+    $ fq2=test.2.fq.gz
+    $ outprefix=test
+    $ sudo docker run -v $PWD:$PWD -w $PWD  --rm guanliangmeng/mitoz:2.3 \
     python3 /app/release_MitoZ_v2.3/MitoZ.py all2 \
     --genetic_code 5 \
     --clade Arthropoda \
@@ -39,6 +41,25 @@ Otherwise, you may add the `sudo` command before `docker`, i.e.:
     --outprefix $outprefix \
     --fastq_read_length 125 \
     1>m.log 2>m.err
+
+## Udocker
+
+    $ # make sure your fq1 and fq2 files are in $PWD directory!
+    $ fq1=test.1.fq.gz
+    $ fq2=test.2.fq.gz
+    $ outprefix=test
+    $ udocker run --rm --volume=$PWD --workdir=$PWD guanliangmeng/mitoz:2.3 \
+    python3 /app/release_MitoZ_v2.3/MitoZ.py all2 \
+    --genetic_code 5 \
+    --clade Arthropoda \
+    --insert_size 250 \
+    --thread_number 4 \
+    --fastq1 $fq1 \
+    --fastq2 $fq2 \
+    --outprefix $outprefix \
+    --fastq_read_length 125 \
+    1>m.log 2>m.err
+
 
 when use singularity verion, the command would be:
 

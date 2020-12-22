@@ -27,6 +27,9 @@ which can reduce memory usage of MitoZ.
 2. filter out the mitochondrial reads by mapping reads against mitogenomes of closely-related species (if any).
   provide such reads (a smaller volume of data) to MitoZ.
 
+**Warning**:
+Use too many threads (e.g. > 16) can be problematic, the assembly step can get stuck and seems never finished.  
+
 # 3. Get started
 
 MitoZ includes multiple modules, including `all`, `all2`, `filter`, `assemble`, `findmitoscaf`, `annotate` and `visualize`.

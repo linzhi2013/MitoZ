@@ -2,7 +2,7 @@
 **when you meet a problem, you can search https://github.com/linzhi2013/MitoZ/issues to check whether similar questions have been raised by other users. 
 And possibly these questions have been addressed already.**
 
-**If no related issue and answers is found, then please raise a new issue. If there are sensitive data and you want to send me emails so we can check it in more details, PLEASE also raise a new issue FIRSTLY, and finally UPLOAD corresponding anwsers (in English would be best) to this issue**, so that the same question won't be asked multiple times. Thanks!
+**If no related issues and answers are found, then please raise a new issue. If there are sensitive data and you would like to send me emails so we can check it in more details, PLEASE ALSO raise a new issue FIRSTLY, and finally UPLOAD corresponding anwsers (in English would be best) to this issue**, so that the same question won't be asked multiple times. Thanks!
 
 Besides, please **use a more specific title** for your issue, which can help others quickly understand your questions.
 

@@ -4,7 +4,7 @@ And possibly these questions have been addressed already.**
 
 **If no related issue and answers is found, then please raise a new issue. If there are sensitive data and you want to send me emails so we can check it in more details, PLEASE also raise a new issue FIRSTLY, and finally UPLOAD corresponding anwsers to this issue**, so that the same question won't be asked multiple times. Thanks!
 
-![how_to_search_similar_issues]("../../how_to_search_similar_issues.png")
+![how_to_search_similar_issues](../../how_to_search_similar_issues.png)
 
 
 

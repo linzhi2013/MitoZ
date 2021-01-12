@@ -11,6 +11,16 @@ We provide three options to use MitoZ:
 
 * Source code with dependency to be installed with Anaconda or Miniconda.
 
+If you install MitoZ from source code or Singularity version, verify whether your taxonomy database is valid!!!!
+
+$ python3
+>>> from ete3 import NCBITaxa
+>>> a = NCBITaxa()
+>>> a.get_name_translator(["Arthropoda"])
+{'Arthropoda': [6656]}
+
+If error occurs, then your taxonomy database is invalid, which could be due to there is not enough space in your HOME directory. The solution is already in MitoZ issues.
+
 # 1 Singularity container
 
 ## 1.1 Install Singularity

@@ -8,6 +8,13 @@ Besides,
 1. please **use a more specific title** for your issue, which can help others quickly understand your questions.
 2. **An issue should be focused on only ONE specific quesion.** When this specific question has been addressed and you find a new question, then you should **open a NEW issue**, instead of asking another question under same thread.
 
+
+**WARNING**
+
+**Before you run MitoZ with your own dataset, you should try the test dataset (https://github.com/linzhi2013/MitoZ/tree/master/test) FIRST, to make sure the installation is good.**
+
+**And if your installation is problematic, you should try Docker MitoZ-2.3, or Udocker MitoZ-2.3. DO NOT waste your time or others' time on software installation.**
+
 ![how_to_search_similar_issues](https://github.com/linzhi2013/MitoZ/blob/master/how_to_search_similar_issues.png)
 
 

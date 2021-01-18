@@ -17,7 +17,7 @@ Besides,
 
 ![how_to_search_similar_issues](https://github.com/linzhi2013/MitoZ/blob/master/how_to_search_similar_issues.png)
 
-
+**I WILL NOT reply any similar questions which has been raised and answered any more, unless the user states that they have tried the answers from issue XXX (provide the links here) and these methods fail.**
 
 # Manual of MitoZ
 

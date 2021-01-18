@@ -2,7 +2,7 @@
 **when you meet a problem, you can search https://github.com/linzhi2013/MitoZ/issues to check whether similar questions have been raised by other users. 
 And possibly these questions have been addressed already.**
 
-If no related issues and answers are found, then please RAISE a NEW issue. **Any similar questions which have been raised and answered WILL NOT be answered any more, unless the user states that they have tried the answers from issue XXX and issue XXX (provide the links here) and these methods fail.** One should check the old similar issues/answers first.
+If no related issues and answers are found, then please RAISE a NEW issue. **Any similar questions which have been raised and answered WILL NOT be answered any more, unless the user states that they have tried the answers from issue XXX and issue XXX (provide the links here) and these methods fail.**
 
 If there are sensitive data and you would like to send me emails so we can check it in more details, **PLEASE ALSO raise a NEW issue FIRSTLY, and finally UPLOAD corresponding anwsers to this issue (both question and answer in English would be best)**, so that the same question won't be asked multiple times. You can use the "comment" function of Github issue page to post my answers to your created issue --- any one is able to "comment" an issue once it's been created. **Otherwise, I would hesitate to reply to your email because I would probably have to answer the same questions over and over again later.** Thanks!
 

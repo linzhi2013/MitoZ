@@ -254,6 +254,19 @@ If you have difficulties in downloading the database from NCBI, please forward t
 **Recently, the NCBI taxonomy database (Sep 2020) seems to have some problems (e.g. `sqlite3.IntegrityError: UNIQUE constraint failed: synonym.spname, synonym.taxid`)**, see https://github.com/linzhi2013/MitoZ/issues/81#issue-699246501 and https://github.com/linzhi2013/MitoZ/issues/79#issuecomment-689582348. If this happens to you, you should refer to https://github.com/linzhi2013/MitoZ/issues/72#issuecomment-666215301 first.
 
 
+**Now verify whether the NCBI Taxonomy database is valid**
+
+```
+$ python
+>>> from ete3 import NCBITaxa
+>>> a = NCBITaxa()
+>>> a.get_name_translator(["Arthropoda"])
+{'Arthropoda': [6656]}
+```
+
+If there's error for you, then your NCBI taxonomy databse is broken and you should reinstall it. **This issue has been asked several times in the Github issue page and there are solutions for this. But others met the same problem wouldn't even check through these issues and just raise a new issue. I'm tired of repeating the same answers now, so I WILL NOT reply to any new issues on this.**
+
+
 ## 4.6 Download the MitoZ source codes
 
 Go to `https://github.com/linzhi2013/MitoZ/tree/master/version_2.3` and download the file `release_MitoZ_v2.3.tar.bz2` (https://raw.githubusercontent.com/linzhi2013/MitoZ/master/version_2.3/release_MitoZ_v2.3.tar.bz2). You can put it to anywhere.

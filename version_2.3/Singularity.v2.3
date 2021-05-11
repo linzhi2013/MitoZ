@@ -21,7 +21,9 @@ From: ubuntu:16.04
 
     apt-get clean && \
     apt-get autoclean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/*
+    # now do not delete /tmp/* /var/tmp/* files, as they are mounted from the HOST system.
+    # see: https://github.com/linzhi2013/MitoZ/issues/119
 
     # set anaconda path
     export PATH="/app/anaconda/bin:$PATH"

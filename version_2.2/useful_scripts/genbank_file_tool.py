@@ -1,1 +1,0 @@
-../bin/annotate/genbank_file_tool.py

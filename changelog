@@ -1,0 +1,26 @@
+
+v2.3
+20180123
+1. describe the most-closely-related species in the 'summary.txt' file
+2. describe the topology of each sequence in the 'summary.txt' file
+3. provide an example config file for each module in the program direcotry.
+4, make `all` and `filter` support single-end data
+5. now can also annotate control region.
+
+v2.2
+20180114
+1. add configure file support
+
+v2.1
+20180110
+1. add single-end data support
+
+v2.0
+20180104
+1. remove the useless codes
+2. to be more user-friendly
+
+v1.0
+20181121
+1. use conda to install blastn and other programs, MitoZ uses those command from the PATH variable
+

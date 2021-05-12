@@ -1,4 +1,0 @@
-ZZZ ZZZ.cds
-NN  NN.cds
-NN NN.trna
-NN NN.rrna

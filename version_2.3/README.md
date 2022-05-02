@@ -1,3 +1,5 @@
+# **MitoZ 3.0: https://github.com/linzhi2013/MitoZ/releases/tag/3.0**
+
 # Tips for newcomers to Github
 **when you meet a problem, you can search https://github.com/linzhi2013/MitoZ/issues to check whether similar questions have been raised by other users. 
 And possibly these questions have been addressed already.**

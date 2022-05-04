@@ -1,5 +1,5 @@
 # MitoZ 3.0 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html) 
-**See https://github.com/linzhi2013/MitoZ/releases/tag/3.0 for more details**
+**See https://github.com/linzhi2013/MitoZ/releases/tag/3.0 and https://github.com/linzhi2013/MitoZ/wiki for more details**
 
 # Tips for newcomers to Github
 **when you meet a problem, you can search https://github.com/linzhi2013/MitoZ/issues to check whether similar questions have been raised by other users. 

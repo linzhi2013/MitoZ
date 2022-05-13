@@ -1,0 +1,50 @@
+Bootstrap: docker
+From: ubuntu:16.04
+
+%post
+    apt-get update
+    apt-get install -y  wget bzip2
+    mkdir -p /app
+    # install anaconda
+    if [ ! -d /app/anaconda ]; then
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+        -O /app/anaconda.sh && \
+        bash /app/anaconda.sh -b -p /app/anaconda && \
+        rm -rf /app/anaconda.sh
+    fi
+
+    apt-get clean && \
+    apt-get autoclean && \
+    rm -rf /var/lib/apt/lists/*
+    # now do not delete /tmp/* /var/tmp/* files, as they are mounted from the HOST system.
+    # see: https://github.com/linzhi2013/MitoZ/issues/119
+
+    # set anaconda path
+    export PATH="/app/anaconda/bin:$PATH"
+
+    conda config --add channels defaults
+    conda config --add channels bioconda
+    conda config --add channels conda-forge
+
+    conda install mamba -n base -c conda-forge  # "mamba" is much much faster than the "conda" command!
+
+    # mamba install -c bioconda mitoz
+    # or local installation:
+    mamba install -f https://github.com/linzhi2013/MitoZ/releases/download/3.2/mitozEnv.yaml
+    pip install https://github.com/linzhi2013/MitoZ/releases/download/3.2/mitoz-3.2.tar.gz
+
+    conda clean -y -a
+
+
+
+%environment
+    export LC_ALL=C
+    export PATH=/app/anaconda/bin:$PATH
+
+
+%runscript
+    mitoz "$@"
+
+
+%labels
+AUTHOR    Guanliang MENG, ZFMK

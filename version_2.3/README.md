@@ -1,4 +1,5 @@
-# MitoZ 3 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html) 
+# MitoZ 3 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html)  [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/version.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/latest_release_date.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/downloads.svg)](https://anaconda.org/bioconda/mitoz)
+
 **See https://github.com/linzhi2013/MitoZ/releases/ and https://github.com/linzhi2013/MitoZ/wiki for more details**
 
 # Tips for newcomers to Github

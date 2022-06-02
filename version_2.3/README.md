@@ -3,10 +3,10 @@
 
 **See**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation**
-- **New-Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
+- **New Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
 - **https://github.com/linzhi2013/MitoZ/wiki**
 - **https://github.com/linzhi2013/MitoZ/releases/**
-- **Please try to use the latest version first if you find some bugs when using the old versions**
+- **Please try the latest version first if you find some bugs in the old versions**
 
 
 # Tips for newcomers to Github

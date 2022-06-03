@@ -9,7 +9,7 @@
 - **Please try the latest version first if you find some bugs in the old versions**
 
 **News**
-- The Conda version of MitoZ 3.3 has been rebuilt (https://github.com/bioconda/bioconda-recipes/pull/35186), there should come a build called `3.3-1` a bit later.
+- The Conda version of MitoZ 3.3 (latest) has been rebuilt (https://github.com/bioconda/bioconda-recipes/pull/35186), there should come a build called `3.3-1` a bit later.
 
 
 # Tips for newcomers to Github

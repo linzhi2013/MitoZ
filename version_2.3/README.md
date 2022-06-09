@@ -9,7 +9,7 @@
 - **Please try the latest version first if you find some bugs in the old versions**
 
 **News**
-- The Conda version of MitoZ 3.3 (latest) has been rebuilt (https://github.com/bioconda/bioconda-recipes/pull/35186) and fixed the ete3 version problem.
+- **MitoZ 3.4* has come out and fixed a few bugs, it's recommended to update to this version!
 - Have a look at https://github.com/linzhi2013/MitoZ/issues and https://github.com/linzhi2013/MitoZ/wiki/Known-issues for known bugs or issues.
 
 

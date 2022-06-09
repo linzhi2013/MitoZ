@@ -9,7 +9,7 @@
 - **Please try the latest version first if you find some bugs in the old versions**
 
 **News**
-- **MitoZ 3.4has come out and fixed a few bugs, it's recommended to update to this version!** 
+- **MitoZ 3.4 has come out and fixed a few bugs, it's recommended to update to this version!** 
 - Have a look at https://github.com/linzhi2013/MitoZ/issues and https://github.com/linzhi2013/MitoZ/wiki/Known-issues for known bugs or issues.
 
 

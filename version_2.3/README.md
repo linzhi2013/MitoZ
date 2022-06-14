@@ -8,6 +8,7 @@
 - **https://github.com/linzhi2013/MitoZ/releases/**
 - **Please try the latest version first if you find some bugs in the old versions**
 	- to do that, you should specify the version of MitoZ when you use the `mamba/conda` command (please refer to the [installation instruction](https://github.com/linzhi2013/MitoZ/wiki/Installation)), as I found out that many people still download the older versions.
+	- verify the MitoZ version after finishing installation.
 
 **News**
 - **MitoZ 3.4 has come out (and rebuilt for the Conda version too https://github.com/linzhi2013/MitoZ/issues/151) and fixed a few bugs, it's recommended to update to this version!**

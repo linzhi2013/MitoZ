@@ -12,7 +12,7 @@
 - **Latest release: https://github.com/linzhi2013/MitoZ/releases/**
 
 
-**Bugs**
+**Bugs and Questions?**
 - Have a look at https://github.com/linzhi2013/MitoZ/issues and https://github.com/linzhi2013/MitoZ/wiki/Known-issues for known bugs or issues.
 
 - **Please try the latest version first if you find some bugs in the old versions**

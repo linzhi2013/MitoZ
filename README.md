@@ -22,6 +22,6 @@
 
 
 
-# Citation
+# Citations
 - Meng G, Li Y, Yang C, Liu S. MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization. Nucleic acids research. 2019 Jun 20;47(11):e63-. https://doi.org/10.1093/nar/gkz173
 - See also https://github.com/linzhi2013/MitoZ/wiki/Citations

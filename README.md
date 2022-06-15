@@ -9,7 +9,7 @@
 - **Please try the latest version first if you find some bugs in the old versions**
 	- to do that, you should specify the version of MitoZ when you use the `mamba/conda` command (please refer to the [installation instruction](https://github.com/linzhi2013/MitoZ/wiki/Installation)), as I found out that many people still download the older versions.
 
-- In case there are still bugs in the latest version, please **FIRSTLY search https://github.com/linzhi2013/MitoZ/issues** to check whether similar questions have been raised by other users. And possibly these questions have been addressed already. If no related issues and answers are found, then please RAISE a NEW issue. 
+- In case there are still bugs in the latest version, please **firstly search https://github.com/linzhi2013/MitoZ/issues** and the Wiki to check whether similar questions have been raised by other users. If no related issues and answers are found, then please raise a new issue. 
 
 
 **News**

@@ -15,3 +15,8 @@
 **News**
 - **MitoZ 3.4 has come out (and rebuilt for the Conda version too https://github.com/linzhi2013/MitoZ/issues/151) and fixed a few bugs, it's recommended to update to this version!**
 - Have a look at https://github.com/linzhi2013/MitoZ/issues and https://github.com/linzhi2013/MitoZ/wiki/Known-issues for known bugs or issues.
+
+
+# Citation
+- Meng G, Li Y, Yang C, Liu S. MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization. Nucleic acids research. 2019 Jun 20;47(11):e63-. https://doi.org/10.1093/nar/gkz173
+- See also https://github.com/linzhi2013/MitoZ/wiki/Citations

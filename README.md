@@ -1,5 +1,17 @@
 # MitoZ 3 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html)  [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/version.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/latest_release_date.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/downloads.svg)](https://anaconda.org/bioconda/mitoz)
 
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+WHEN YOU ADAPT (PART OF) THE SOFTWARE FOR YOUR USE CASES, THE AUTHOR AND
+THE SOFTWARE MUST BE EXPLICITLY CREDITED IN YOUR PUBLICATIONS AND SOFTWARE,
+AND YOU SHOULD ASK THE USERS OF YOUR SOFTWARE TO CITE THE SOFTWARE IN
+THEIR PUBLICATIONS. IN A WORD, 请讲武德.
 
 **News**
 - **MitoZ 3.4 has come out (and rebuilt for the Conda version too https://github.com/linzhi2013/MitoZ/issues/151) and fixed a few bugs, it's recommended to update to this version!**

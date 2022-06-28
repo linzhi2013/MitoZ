@@ -20,6 +20,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 **See**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation** and https://github.com/linzhi2013/MitoZ/issues/152
 - **New Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
+- **Tutorial: https://github.com/linzhi2013/MitoZ/wiki/Tutorial**
 - **Wiki: https://github.com/linzhi2013/MitoZ/wiki**
 - **Latest release: https://github.com/linzhi2013/MitoZ/releases/**
 

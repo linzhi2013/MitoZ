@@ -14,7 +14,7 @@ AND YOU SHOULD ASK THE USERS OF YOUR SOFTWARE TO CITE THE SOFTWARE IN
 THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 **News**
-- **Add a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explain the resulting files**
+- **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**
 - **MitoZ 3.4 has come out (and rebuilt for the Conda version too https://github.com/linzhi2013/MitoZ/issues/151) and fixed a few bugs, it's recommended to update to this version!**
 
 

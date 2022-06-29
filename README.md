@@ -14,7 +14,7 @@ AND YOU SHOULD ASK THE USERS OF YOUR SOFTWARE TO CITE THE SOFTWARE IN
 THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 **About:**
-- **MitoZ provides a "one-click" solution from raw data fastq files to annotated mitogenomes.**
+- **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**

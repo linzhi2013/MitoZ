@@ -35,7 +35,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **Please try the latest version first if you find some bugs in the old versions**
 	- to do that, you should specify the version of MitoZ when you use the `mamba/conda` command (please refer to the [installation instruction](https://github.com/linzhi2013/MitoZ/wiki/Installation)), as I found out that many people still download the older versions.
 
-- I have been updating the documentation from time to time, so it may be good for you to check the documentation again every after some time.
+- _I have been updating the documentation from time to time, so it may be good for you to check the documentation again every after some time._
 
 - In case there are still bugs in the latest version, please **firstly search https://github.com/linzhi2013/MitoZ/issues** and the Wiki to check whether similar questions have been raised by other users. If no related issues and answers are found, then please raise a new issue. Thank you!
 

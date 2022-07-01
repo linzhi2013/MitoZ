@@ -1,6 +1,4 @@
-
-
-<h1 align="center">  MitoZ </h1>
+# MitoZ 3
 
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html)  [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/version.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/latest_release_date.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://img.shields.io/conda/dn/bioconda/mitoz)](https://anaconda.org/bioconda/mitoz)     
 [![docker build](https://img.shields.io/docker/cloud/build/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker pulls](https://img.shields.io/docker/pulls/guanliangmeng/mitoz?style=flat)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker latest version](https://img.shields.io/docker/v/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![singularity image](https://img.shields.io/badge/Singularity%20build-passing-brightgreen)](https://www.dropbox.com/sh/mqjqn656x41q2wb/AAD02t_kUCjNHbBgCeYpEM88a?dl=0)

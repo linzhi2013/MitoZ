@@ -20,7 +20,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
-- **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation/_edit#2-conda-pack) to try to avoid the missing Perl module problem.**
+- **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#2-conda-pack) to try to avoid the missing Perl module problem.**
 - **Add Docker support for MitoZ (see the Installation part)**
 - **Share the Singuliarty image of the latest version of MitoZ via Dropbox (see the Installation part)**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**

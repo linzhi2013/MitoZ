@@ -1,7 +1,7 @@
 # MitoZ 3
 
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/mitoz/README.html)  [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/version.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/latest_release_date.svg)](https://anaconda.org/bioconda/mitoz) [![Anaconda-Server Badge](https://img.shields.io/conda/dn/bioconda/mitoz)](https://anaconda.org/bioconda/mitoz)  [![Anaconda-Server Badge](https://anaconda.org/bioconda/mitoz/badges/license.svg)](https://anaconda.org/bioconda/mitoz)   
-[![docker build](https://img.shields.io/docker/cloud/build/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker pulls](https://img.shields.io/docker/pulls/guanliangmeng/mitoz?style=flat)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker latest version](https://img.shields.io/docker/v/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![singularity image](https://img.shields.io/badge/Singularity%20build-passing-brightgreen)](https://www.dropbox.com/sh/mqjqn656x41q2wb/AAD02t_kUCjNHbBgCeYpEM88a?dl=0) [![Conda-pack](https://img.shields.io/badge/conda--pack-passing-brightgreen)](https://github.com/linzhi2013/MitoZ/wiki/Installation#3-conda-pack)  
+[![docker build](https://img.shields.io/docker/cloud/build/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker pulls](https://img.shields.io/docker/pulls/guanliangmeng/mitoz?style=flat)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![docker latest version](https://img.shields.io/docker/v/guanliangmeng/mitoz)](https://hub.docker.com/r/guanliangmeng/mitoz/tags) [![singularity image](https://img.shields.io/badge/Singularity%20build-passing-brightgreen)](https://www.dropbox.com/sh/mqjqn656x41q2wb/AAD02t_kUCjNHbBgCeYpEM88a?dl=0) [![Conda-pack](https://img.shields.io/badge/conda--pack-passing-brightgreen)](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack)  
 
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
 REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
@@ -21,7 +21,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 **News**
 - **MitoZ 3.5-beta-1 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5-beta-1), and can be installed via the https://github.com/linzhi2013/MitoZ/wiki/Installation#5-source-codes method. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5-beta-1 for new features and fixed bugs**
-- **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#2-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the missing Perl module problem!**
+- **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the missing Perl module problem!**
 - **Add Docker support for MitoZ (see the Installation part)**
 - **Share the Singuliarty image of the latest version of MitoZ via Dropbox (see the Installation part)**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**

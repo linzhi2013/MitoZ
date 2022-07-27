@@ -21,7 +21,9 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 **News**
 - **MitoZ 3.5-beta-1 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5-beta-1), and can be installed via the https://github.com/linzhi2013/MitoZ/wiki/Installation#5-source-codes method. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5-beta-1 for new features and fixed bugs**
+
 - **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the *missing Perl module problem*!**
+
 - **Add Docker support for MitoZ (see the Installation part)**
 - **Share the Singuliarty image of the latest version of MitoZ via Dropbox (see the Installation part)**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**

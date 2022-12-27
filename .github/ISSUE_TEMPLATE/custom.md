@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+## on which platform/server? (Windows? MacOS? Ubuntu? etc.)
+
 ## MitoZ version?
 
 ## How did you install MitoZ? (e.g. Docker, Udocker, Singularity, Conda-Pack, Conda, or source code)

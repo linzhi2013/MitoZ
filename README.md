@@ -21,7 +21,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
-- **MitoZ 3.5 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5), and can be installed via the https://github.com/linzhi2013/MitoZ/wiki/Installation#5-source-codes method. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5 for new features and fixed bugs**. **Other installation methods will be coming soon**. The bioconda version is currently waiting for someone to review and merge (https://github.com/bioconda/bioconda-recipes/pull/38676)
+- **MitoZ 3.5 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5), and can be installed via the https://github.com/linzhi2013/MitoZ/wiki/Installation#5-source-codes method. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5 for new features and fixed bugs**. **Other installation methods will be coming soon**. The bioconda version is currently waiting for someone to review and merge (https://github.com/bioconda/bioconda-recipes/pull/38676). If you are a member of the Bioconda project, please help me reivew its recipe and merge my commit to the main branch, thanks!
 
 - **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the *missing Perl module problem*!**
 

@@ -1,1 +1,0 @@
-../bin/common/circle_check.py

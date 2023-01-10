@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-## on which platform/server? (Windows? MacOS? Ubuntu? etc.)
+## on which platform/server? (Windows? Windows Sublinux? MacOS? Ubuntu? etc.)
 
 ## MitoZ version?
 
@@ -19,4 +19,4 @@ assignees: ''
 
 ## Problem description
 
-# Log messages from MitoZ (stdout and stderr)
+## Log messages from MitoZ (stdout and stderr)

@@ -21,15 +21,12 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
-- **MitoZ 3.5 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5), and can be installed via the Docker/Singularity or the https://github.com/linzhi2013/MitoZ/wiki/Installation#5-source-codes methods. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5 for new features and fixed bugs**. **Other installation methods will be coming soon**. The bioconda version is currently waiting for someone to review and merge (https://github.com/bioconda/bioconda-recipes/pull/38676). If you are a member of the Bioconda project, please help me reivew its recipe and merge my commit to the main branch, thanks!
+- **MitoZ 3.5 has been released (https://github.com/linzhi2013/MitoZ/releases/tag/3.5), and can be installed via the Docker/Singularity/Conda/Source code methods. See https://github.com/linzhi2013/MitoZ/releases/tag/3.5 for new features and fixed bugs**. 
 
-- **Distribute my working MitoZ environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the *missing Perl module problem*!**
+- **Distribute my working MitoZ (v3.4) environment using [Conda-Pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack) to try to avoid the missing Perl module problem. It is worth a try if you have the *missing Perl module problem*!**
 
-- **Add Docker support for MitoZ (see the Installation part)**
-- **Share the Singuliarty image of the latest version of MitoZ via Dropbox (see the Installation part)**
+- **Share the Singuliarty image of the version (v3.4) of MitoZ via Dropbox (see the Installation part)**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**
-- **MitoZ 3.4 has come out (and rebuilt for the Conda version too https://github.com/linzhi2013/MitoZ/issues/151) and fixed a few bugs, it's recommended to update to this version!**
-
 
 **See**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation** and https://github.com/linzhi2013/MitoZ/issues/152

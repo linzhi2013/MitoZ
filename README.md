@@ -29,7 +29,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **Added a tutorial at https://github.com/linzhi2013/MitoZ/wiki/Tutorial and explained the resulting files**
 
 **See**
-- **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation** and https://github.com/linzhi2013/MitoZ/issues/152
+- **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation**.
 - **New Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
 - **Tutorial: https://github.com/linzhi2013/MitoZ/wiki/Tutorial**
 - **Documentation: https://github.com/linzhi2013/MitoZ/wiki**

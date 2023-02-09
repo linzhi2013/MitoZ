@@ -47,4 +47,4 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 # Citations
 - Meng G, Li Y, Yang C, Liu S. MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization. Nucleic acids research. 2019 Jun 20;47(11):e63-. https://doi.org/10.1093/nar/gkz173
-- Addictionally, please cite the related software invoked by MitoZ: https://github.com/linzhi2013/MitoZ/wiki/Citations
+- Additionally, please cite the related software invoked by MitoZ: https://github.com/linzhi2013/MitoZ/wiki/Citations

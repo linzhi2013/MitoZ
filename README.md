@@ -25,6 +25,11 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 - **Know bug (April-12-2023): If your default shell is not bash, you can run into the missing annotation of tRNA genes (see https://github.com/linzhi2013/MitoZ/issues/187). Please change the default shell to bash before using MitoZ 3.5!** 
 
+- check which shell you are using:
+    ```
+    $ echo "$SHELL"
+    ```
+
 
 **See**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation**.

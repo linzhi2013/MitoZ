@@ -23,7 +23,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 **News**
 - **(April-14-2023) MitoZ 3.6 is just released (https://github.com/linzhi2013/MitoZ/releases/tag/3.6), fixed some bugs in MitoZ 3.5. It is recommended to upgrade to this version!** You can install it via conda and source code.
 
-- **Known bugs (April-13-2023): (1) If your default shell is not bash, you can run into the missing annotation of tRNA genes (see https://github.com/linzhi2013/MitoZ/issues/187). Please change the default shell to bash before using MitoZ 3.5! (2) In MitoZ 3.5, I mistakenly used a `cmsearch` binary for Mac OS for Linux platform, which leads to the problem of failing to annotate any tRNA genes. Please check https://github.com/linzhi2013/MitoZ/issues/187 for the current solution.** 
+- **Known bugs for MitoZ 3.5 (April-13-2023): (1) If your default shell is not bash, you can run into the missing annotation of tRNA genes (see https://github.com/linzhi2013/MitoZ/issues/187). Please change the default shell to bash before using MitoZ 3.5! (2) In MitoZ 3.5, I mistakenly used a `cmsearch` binary for Mac OS for Linux platform, which leads to the problem of failing to annotate any tRNA genes. Please check https://github.com/linzhi2013/MitoZ/issues/187 for the current solution.** 
 
 - check which shell you are using:
     ```

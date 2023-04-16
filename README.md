@@ -23,13 +23,6 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 **News**
 - **(April-14-2023) MitoZ 3.6 is just released (https://github.com/linzhi2013/MitoZ/releases/tag/3.6), fixed some bugs in MitoZ 3.5. It is recommended to upgrade to this version!** You can install it via [conda](https://github.com/linzhi2013/MitoZ/wiki/Installation#5-conda) and [source code](https://github.com/linzhi2013/MitoZ/wiki/Installation#6-source-codes), it will take some time bofore the Docker/Udocker/Singularity/ versions come out.
 
-- **Known bugs for MitoZ 3.5 (April-13-2023): (1) If your default shell is not bash, you can run into the missing annotation of tRNA genes (see https://github.com/linzhi2013/MitoZ/issues/187). Please change the default shell to bash before using MitoZ 3.5! (2) In MitoZ 3.5, I mistakenly used a `cmsearch` binary for Mac OS for Linux platform, which leads to the problem of failing to annotate any tRNA genes. Please check https://github.com/linzhi2013/MitoZ/issues/187 for the current solution.** 
-
-- check which shell you are using:
-    ```
-    $ echo "$SHELL"
-    ```
-
 
 **See**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation**.
@@ -44,6 +37,14 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 
 - **Please try the latest version first if you find some bugs in the old versions**
 	- to do that, you should specify the version of MitoZ when you use the `mamba/conda` command (please refer to the [installation instruction](https://github.com/linzhi2013/MitoZ/wiki/Installation)), as I found out that many people still download the older versions.
+
+- **Known bugs for MitoZ 3.5 (April-13-2023): (1) If your default shell is not bash, you can run into the missing annotation of tRNA genes (see https://github.com/linzhi2013/MitoZ/issues/187). Please change the default shell to bash before using MitoZ 3.5! (2) In MitoZ 3.5, I mistakenly used a `cmsearch` binary for Mac OS for Linux platform, which leads to the problem of failing to annotate any tRNA genes. Please check https://github.com/linzhi2013/MitoZ/issues/187 for the current solution.** 
+
+- check which shell you are using:
+    ```
+    $ echo "$SHELL"
+    ```
+
 
 - _I have been updating the documentation (wiki) from time to time, so it may be good for you to check the documentation again every after some time._
 

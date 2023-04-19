@@ -21,6 +21,8 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
+- (April-19-2023) On the installation problem (https://github.com/linzhi2013/MitoZ/issues/188), hopefully now it is fixed. Please let me know if it is not.
+
 - **(April-14-2023) MitoZ 3.6 is just released (https://github.com/linzhi2013/MitoZ/releases/tag/3.6), fixed some bugs in MitoZ 3.5. It is recommended to upgrade to this version!** You can install it via **[conda-pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack)** (firstly recommended if the conda way does not work for you), [conda](https://github.com/linzhi2013/MitoZ/wiki/Installation#5-conda) and [source code](https://github.com/linzhi2013/MitoZ/wiki/Installation#6-source-codes), it will take some time bofore the Docker/Udocker/Singularity/ versions come out.
 
 

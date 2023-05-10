@@ -24,7 +24,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 **News**
 - **(April-20-2023) [Docker](https://github.com/linzhi2013/MitoZ/wiki/Installation#1-docker) and [Singularity](https://github.com/linzhi2013/MitoZ/wiki/Installation#3-apptainersingularity) versions of MitoZ 3.6 come out now. Both were tested on Ubuntu 20.04.4 LTS.**
 
-- **(April-19-2023) On the installation problem (https://github.com/linzhi2013/MitoZ/issues/188), hopefully now it is fixed. Please let me know if it is not.**
+- **(April-19-2023) On the installation problem (https://github.com/linzhi2013/MitoZ/issues/188), hopefully now it is fixed. Please let me know if it is not. You might need to specify the Python versions if you have the same problem when install conda from source code or conda. This is because my rebuild version of mitoz on Bioconda has [not been merged](https://github.com/bioconda/bioconda-recipes/pull/40510)  **
 
 - **(April-14-2023) MitoZ 3.6 is just released (https://github.com/linzhi2013/MitoZ/releases/tag/3.6), fixed some bugs in MitoZ 3.5. It is recommended to upgrade to this version!** You can install it via **[conda-pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack)** (firstly recommended if the conda way does not work for you), [conda](https://github.com/linzhi2013/MitoZ/wiki/Installation#5-conda) and [source code](https://github.com/linzhi2013/MitoZ/wiki/Installation#6-source-codes).
 

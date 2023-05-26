@@ -21,4 +21,4 @@ assignees: ''
 
 ## Problem description
 
-## Log messages from MitoZ (stdout and stderr, e.g., both '`m.log` and `m.err` files)
+## Log messages from MitoZ (stdout and stderr, e.g., both `m.log` and `m.err` files)

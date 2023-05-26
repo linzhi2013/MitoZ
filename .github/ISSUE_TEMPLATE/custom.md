@@ -15,8 +15,10 @@ assignees: ''
 
 ## Did you run a test after your installation, and was the test run okay?
 
+## How much data (roughly) did you use for mitogenome assembly? e.g. 5Gbp?
+
 ## The command you used?
 
 ## Problem description
 
-## Log messages from MitoZ (stdout and stderr)
+## Log messages from MitoZ (stdout and stderr, e.g., both '`m.log` and `m.err` files)

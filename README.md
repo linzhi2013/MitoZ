@@ -32,7 +32,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation. Make SURE that you do a test run using provided test dataset before running your own samples!**. 
 - **New Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
 - **Tutorial: https://github.com/linzhi2013/MitoZ/wiki/Tutorial**
-- **Documentation: https://github.com/linzhi2013/MitoZ/wiki**
+- **Documentation: https://github.com/linzhi2013/MitoZ/wiki** and the [HMTL version](https://github.com/linzhi2013/MitoZ/releases/download/3.6/MitoZ_manual_v3.6.html)
 - **Latest release: https://github.com/linzhi2013/MitoZ/releases/**
 
 

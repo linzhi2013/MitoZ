@@ -29,7 +29,8 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **(April-14-2023) MitoZ 3.6 is just released (https://github.com/linzhi2013/MitoZ/releases/tag/3.6), fixed some bugs in MitoZ 3.5. It is recommended to upgrade to this version!** You can install it via **[conda-pack](https://github.com/linzhi2013/MitoZ/wiki/Installation#4-conda-pack)** (firstly recommended if the conda way does not work for you), [conda](https://github.com/linzhi2013/MitoZ/wiki/Installation#5-conda) and [source code](https://github.com/linzhi2013/MitoZ/wiki/Installation#6-source-codes).
 
 **See**
-- **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation. Make SURE that you do a test run using provided test dataset before running your own samples!**. 
+- **Installation: https://github.com/linzhi2013/MitoZ/wiki/Installation**.
+- **MAKE SURE that you do a [test run](https://github.com/linzhi2013/MitoZ/wiki/Installation#9-running-the-test-dataset) using provided test dataset before running your own samples!**. 
 - **New Features: https://github.com/linzhi2013/MitoZ/wiki/New-Features**
 - **Tutorial: https://github.com/linzhi2013/MitoZ/wiki/Tutorial**
 - **Documentation: https://github.com/linzhi2013/MitoZ/wiki** and the [HMTL version](https://github.com/linzhi2013/MitoZ/releases/download/3.6/MitoZ_manual_v3.6.html). The HTML version may not be update-to-date.

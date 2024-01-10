@@ -22,7 +22,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
-- For Windows Sublinux users, you might need to the `cmsearch` program for [tRNA annotation](https://github.com/linzhi2013/MitoZ/issues/208).
+- For Windows Sublinux users, you might need to recompile the `cmsearch` program for [tRNA annotation](https://github.com/linzhi2013/MitoZ/issues/208).
 
 - **(April-20-2023) [Docker](https://github.com/linzhi2013/MitoZ/wiki/Installation#1-docker) and [Singularity](https://github.com/linzhi2013/MitoZ/wiki/Installation#3-apptainersingularity) versions of MitoZ 3.6 come out now. Both were tested on Ubuntu 20.04.4 LTS.**
 

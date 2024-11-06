@@ -22,7 +22,7 @@ THEIR PUBLICATIONS. IN A WORD, 请讲武德.**
 - **MitoZ provides a "one-click" solution to get annotated mitogenomes from raw data fastq files.**
 
 **News**
-- **(Nov 6, 2024)**: I found that using **too much raw data** (e.g. 12 Gbp) can lead to an un-circular mitogenome while using less raw data (e.g., 0.3 Gbp) can obtain a circular mitogenome (`mitoz all --assembler megahit --kmers_megahit  43 71 99`). So please try a smaller dataset first and it is also less computationally intensive (8 CPUs, max RAM: 2GB, total run time: 10 mins) and faster!
+- **(Nov 6, 2024)**: I found that using **too much raw data** (e.g. 12 Gbp) can lead to an un-circular mitogenome while using less raw data (e.g., 0.3 Gbp) can obtain a circular mitogenome (`mitoz all --assembler megahit --kmers_megahit  43 71 99`). So please try a smaller dataset (say, first 0.3 Gbp then 1 Gbp if fails) first and it is also less computationally intensive and much faster (when raw data is 0.3 Gbp, it used 8 CPUs, max RAM: 2GB, total run time: 10 mins)!
 
 - For Windows Sublinux users, you might need to recompile the `cmsearch` program for [tRNA annotation](https://github.com/linzhi2013/MitoZ/issues/208).
 
